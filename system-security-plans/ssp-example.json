@@ -154,9 +154,9 @@
         "id" : "legal-officer",
         "title" : "Legal Officer"
       } ],
-      "title" : "Enterprise Logging and Auditing System Security Plan",
+      "title" : "Even Better System Security Plan",
       "version" : "1.0",
-      "last-modified" : "2022-02-22T20:32:46.563415Z",
+      "last-modified" : "2022-02-22T18:03:15.653336-05:00",
       "parties" : [ {
         "type" : "organization",
         "uuid" : "3b2a5599-cc37-403f-ae36-5708fa804b27",

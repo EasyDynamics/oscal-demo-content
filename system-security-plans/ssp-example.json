@@ -156,7 +156,7 @@
       } ],
       "title" : "Enterprise Logging and Auditing System Security Plan",
       "version" : "1.0",
-      "last-modified" : "2022-02-22T20:32:46.563415Z",
+      "last-modified" : "2022-02-24T15:53:46.563415Z",
       "parties" : [ {
         "type" : "organization",
         "uuid" : "3b2a5599-cc37-403f-ae36-5708fa804b27",
@@ -299,6 +299,18 @@
       "href" : "https://raw.githubusercontent.com/usnistgov/oscal-content/v1.0.0/nist.gov/SP800-53/rev4/json/NIST_SP-800-53_rev4_MODERATE-baseline_profile.json"
     },
     "system-characteristics" : {
+      "data-flow" : {
+        "description" : "The system data flow",
+        "diagrams" : [ {
+          "description" : "Data flows throughout the system",
+          "caption" : "Data Flow Diagram",
+          "links" : [ {
+            "rel" : "diagram",
+            "href" : "#5cfbc4f7-b7f0-4218-b457-ce04c805e2c9"
+          } ],
+          "uuid" : "39da80c2-dce7-44e3-971d-b44702e5e9cf"
+        } ]
+      },
       "system-ids" : [ {
         "identifier-type" : "https://ietf.org/rfc/rfc4122",
         "id" : "d7456980-9277-4dcb-83cf-f8ff0442623b"
@@ -350,6 +362,18 @@
         "value" : "iaas"
       } ],
       "system-name" : "Enterprise Logging and Auditing System",
+      "network-architecture" : {
+        "description" : "The system network architecture",
+        "diagrams" : [ {
+          "description" : "Client devices connect to switches which connect to a router which connects to the internet",
+          "caption" : "Network Architecture Diagram",
+          "links" : [ {
+            "rel" : "diagram",
+            "href" : "#e9a5474b-3d71-42df-9e38-f490407336c2"
+          } ],
+          "uuid" : "7afc375f-de44-452a-a7d2-d38c76713fa5"
+        } ]
+      },
       "status" : {
         "state" : "other",
         "remarks" : "This is an example, and is not intended to be implemented as a system"
@@ -364,6 +388,22 @@
           "media-type" : "image/png"
         } ],
         "uuid" : "a2fc103a-9fe6-433d-a83b-44a33db1564b"
+      }, {
+        "description" : "A test network architecture diagram",
+        "title" : "Network Architecture Diagram 1",
+        "rlinks" : [ {
+          "href" : "../resource-content/network-diagram.png",
+          "media-type" : "image/png"
+        } ],
+        "uuid" : "e9a5474b-3d71-42df-9e38-f490407336c2"
+      }, {
+        "description" : "A basic data flow diagram",
+        "title" : "Data Flow",
+        "rlinks" : [ {
+          "href" : "../resource-content/data-flow.png",
+          "media-type" : "image/png"
+        } ],
+        "uuid" : "5cfbc4f7-b7f0-4218-b457-ce04c805e2c9"
       } ]
     },
     "uuid" : "cff8385f-108e-40a5-8f7a-82f3dc0eaba8"

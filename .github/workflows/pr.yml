@@ -1,0 +1,47 @@
+---
+name: Validate pull requests
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  schema:
+    name: Validate JSON Schema
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          path: oscal-demo-content
+      - name: Download schemas
+        uses: actions/checkout@v2
+        with:
+          repository: usnistgov/OSCAL
+          path: oscal
+      - name: Setup NodeJS
+        uses: actions/setup-node@v2
+        with:
+          node-version: lts/*
+      - name: Install validator CLI
+        run: npm install -g ajv-formats ajv-cli
+      - name: Run validation
+        run: |
+          declare -A content_types
+          content_types[catalog]="catalogs"
+          content_types[component]="component-definitions"
+          content_types[ssp]="system-security-plans"
+
+          schema_dir="oscal/json/schema"
+
+          errors=0
+          for schema_name in "${!content_types[@]}"; do
+            content_directory="oscal-demo-content/${content_types["$schema_name"]}"
+            schema_file="$schema_dir/oscal_${schema_name}_schema.json"
+            ajv validate --spec=draft7 --errors=json -c ajv-formats -s "$schema_file" -d "$content_directory/*.json"
+            errors=$(( $errors + $? ))
+          done
+          exit $errors
+

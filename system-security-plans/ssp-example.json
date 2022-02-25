@@ -156,7 +156,7 @@
       } ],
       "title" : "Enterprise Logging and Auditing System Security Plan",
       "version" : "1.0",
-      "last-modified" : "2022-02-24T15:53:46.563415Z",
+      "last-modified" : "2022-02-25T02:21:44.493500Z",
       "parties" : [ {
         "type" : "organization",
         "uuid" : "3b2a5599-cc37-403f-ae36-5708fa804b27",
@@ -372,6 +372,14 @@
             "href" : "#e9a5474b-3d71-42df-9e38-f490407336c2"
           } ],
           "uuid" : "7afc375f-de44-452a-a7d2-d38c76713fa5"
+        }, {
+          "description" : "Another sample network architecture",
+          "caption" : "Sample network diagram",
+          "links" : [ {
+            "rel" : "diagram",
+            "href" : "https://upload.wikimedia.org/wikipedia/commons/1/12/Sample-network-diagram.png"
+          } ],
+          "uuid" : "c7bb2b50-25ca-44db-92eb-e5fca20df751"
         } ]
       },
       "status" : {

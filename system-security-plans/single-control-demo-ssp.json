@@ -1,0 +1,350 @@
+{
+  "system-security-plan" : {
+    "system-implementation" : {
+      "inventory-items" : [ {
+        "responsible-parties" : [ {
+          "role-id" : "asset-administrator",
+          "party-uuids" : [ "833ac398-5c9a-4e6b-acba-2a9c11399da0" ]
+        }, {
+          "role-id" : "asset-owner",
+          "party-uuids" : [ "3b2a5599-cc37-403f-ae36-5708fa804b27" ]
+        } ],
+        "description" : "The logging server.",
+        "uuid" : "c9c32657-a0eb-4cf2-b5c1-20928983063c",
+        "implemented-components" : [ {
+          "component-uuid" : "e00acdcf-911b-437d-a42f-b0b558cc4f03"
+        }, {
+          "component-uuid" : "795533ab-9427-4abe-820f-0b571bacfe6d"
+        } ],
+        "props" : [ {
+          "name" : "asset-id",
+          "value" : "asset-id-logging-server"
+        } ]
+      } ],
+      "components" : [ {
+        "description" : "The entire system as depicted in the system authorization boundary",
+        "type" : "this-system",
+        "title" : "This System",
+        "uuid" : "ac0e5a10-7199-4328-baf7-1742a2bc7d10",
+        "status" : {
+          "state" : "operational"
+        }
+      }, {
+        "responsible-roles" : [ {
+          "role-id" : "provider",
+          "party-uuids" : [ "96c362ee-a012-4e07-92f3-486ab303b0e7" ]
+        }, {
+          "role-id" : "asset-owner",
+          "party-uuids" : [ "3b2a5599-cc37-403f-ae36-5708fa804b27" ]
+        }, {
+          "role-id" : "asset-administrator",
+          "party-uuids" : [ "833ac398-5c9a-4e6b-acba-2a9c11399da0" ]
+        } ],
+        "description" : "Provides a means for hosts to publish logged events to a central server.",
+        "type" : "software",
+        "title" : "Logging Server",
+        "uuid" : "e00acdcf-911b-437d-a42f-b0b558cc4f03",
+        "status" : {
+          "state" : "operational"
+        }
+      }, {
+        "responsible-roles" : [ {
+          "role-id" : "maintainer",
+          "party-uuids" : [ "ec485dcf-2519-43f5-8e7d-014cc315332d" ]
+        } ],
+        "description" : "Requires all components to send logs to the enterprise logging solution\n\n- Requires all components synchronize their time with the appropriate enterprise time service, and at what frequency.\n\n- Identifies the events that must be captured\n\n- Identifies who is responsible/accountable for performing these functions",
+        "type" : "policy",
+        "title" : "Enterprise Logging, Monitoring, and Alerting Policy",
+        "uuid" : "795533ab-9427-4abe-820f-0b571bacfe6d",
+        "props" : [ {
+          "name" : "version",
+          "value" : "2.1"
+        }, {
+          "name" : "last-modified-date",
+          "value" : "20181015"
+        } ],
+        "status" : {
+          "state" : "operational"
+        }
+      }, {
+        "responsible-roles" : [ {
+          "role-id" : "maintainer",
+          "party-uuids" : [ "0f0c15ed-565e-4ce9-8670-b54853d0bf03" ]
+        } ],
+        "description" : "Ensures proper integration into the enterprise as new systems are brought into production.",
+        "links" : [ {
+          "rel" : "implements-policy",
+          "href" : "#795533ab-9427-4abe-820f-0b571bacfe6d",
+          "text" : "Ensures logs from components in new system are able to published to the logging server. Ensures log monitoring capabilities recognize new system as authorized."
+        } ],
+        "type" : "process",
+        "title" : "System Integration Process",
+        "uuid" : "941e2a87-46f4-4b3e-9e87-bbd187091ca1",
+        "props" : [ {
+          "name" : "last-modified-date",
+          "value" : "20181015"
+        } ],
+        "status" : {
+          "state" : "operational"
+        }
+      }, {
+        "responsible-roles" : [ {
+          "role-id" : "maintainer",
+          "party-uuids" : [ "0f0c15ed-565e-4ce9-8670-b54853d0bf03" ]
+        } ],
+        "description" : "Describes how new components are introduced into the system - ensures monitoring teams know about every asset that should be producing logs, thus should be monitored.",
+        "links" : [ {
+          "rel" : "implements-policy",
+          "href" : "#795533ab-9427-4abe-820f-0b571bacfe6d",
+          "text" : "Ensures that all host are known and authorized. Ensures that these hosts publish log events to the logging server."
+        } ],
+        "type" : "process",
+        "title" : "Inventory Management Process",
+        "uuid" : "fa39eb84-3014-46b4-b6bc-7da10527c262",
+        "props" : [ {
+          "name" : "last-modified-date",
+          "value" : "20181015"
+        } ],
+        "status" : {
+          "state" : "operational"
+        }
+      }, {
+        "responsible-roles" : [ {
+          "role-id" : "maintainer",
+          "party-uuids" : [ "0f0c15ed-565e-4ce9-8670-b54853d0bf03" ]
+        } ],
+        "description" : "Describes how to configure a component to ensure its logs are transmitted to Splunk in the appropriate format. Also describes how to configure time synchronization.",
+        "links" : [ {
+          "rel" : "implements-policy",
+          "href" : "#795533ab-9427-4abe-820f-0b571bacfe6d",
+          "text" : "Ensures that all host are configured to publish log events to the logging server."
+        } ],
+        "type" : "guidance",
+        "title" : "Configuration Management Guidance",
+        "uuid" : "4938767c-dd8b-4ea4-b74a-fafffd48ac99",
+        "props" : [ {
+          "name" : "last-modified-date",
+          "value" : "20181015"
+        } ],
+        "status" : {
+          "state" : "operational"
+        }
+      } ],
+      "users" : [ {
+        "role-ids" : [ "asset-administrator" ],
+        "title" : "System Administrator",
+        "uuid" : "9824089b-322c-456f-86c4-4111c4200f69",
+        "props" : [ {
+          "name" : "type",
+          "value" : "internal"
+        } ]
+      }, {
+        "role-ids" : [ "asset-owner" ],
+        "title" : "Audit Team",
+        "uuid" : "ae8de94c-835d-4303-83b1-114b6a117a07",
+        "props" : [ {
+          "name" : "type",
+          "value" : "internal"
+        } ]
+      }, {
+        "role-ids" : [ "legal-officer" ],
+        "title" : "Legal Department",
+        "uuid" : "372ce7a3-92b0-437e-a98c-24d29f9bfab8",
+        "props" : [ {
+          "name" : "type",
+          "value" : "internal"
+        } ]
+      } ],
+      "remarks" : "This is a partial implementation that addresses the logging server portion of the auditing system."
+    },
+    "metadata" : {
+      "roles" : [ {
+        "id" : "legal-officer",
+        "title" : "Legal Officer"
+      } ],
+      "title" : "Enterprise Logging and Auditing System Security Plan",
+      "version" : "1.0",
+      "last-modified" : "2022-05-26T17:19:39.099657Z",
+      "parties" : [ {
+        "type" : "organization",
+        "uuid" : "3b2a5599-cc37-403f-ae36-5708fa804b27",
+        "name" : "Enterprise Asset Owners"
+      }, {
+        "type" : "organization",
+        "uuid" : "833ac398-5c9a-4e6b-acba-2a9c11399da0",
+        "name" : "Enterprise Asset Administrators"
+      }, {
+        "type" : "organization",
+        "uuid" : "ec485dcf-2519-43f5-8e7d-014cc315332d",
+        "name" : "Legal Department"
+      }, {
+        "type" : "organization",
+        "uuid" : "0f0c15ed-565e-4ce9-8670-b54853d0bf03",
+        "name" : "IT Department"
+      }, {
+        "type" : "organization",
+        "uuid" : "96c362ee-a012-4e07-92f3-486ab303b0e7",
+        "name" : "Acme Corp"
+      } ],
+      "oscal-version" : "1.0.0"
+    },
+    "control-implementation" : {
+      "description" : "This is the control implementation for the system.",
+      "implemented-requirements" : [ {
+        "control-id" : "ac-14",
+        "statements" : [ {
+          "statement-id" : "ac-14_smt.b",
+          "by-components" : [ {
+            "component-uuid" : "ac0e5a10-7199-4328-baf7-1742a2bc7d10",
+            "description" : "Mysys AC-14 Part b",
+            "uuid" : "0bfed6c4-1b50-4c2b-bb39-25e5fc89f6e7"
+          } ],
+          "uuid" : "a3ca3eeb-cc5f-4af9-b05c-932945b81118"
+        }, {
+          "statement-id" : "ac-14_smt.a",
+          "by-components" : [ {
+            "component-uuid" : "ac0e5a10-7199-4328-baf7-1742a2bc7d10",
+            "set-parameters" : [ {
+              "values" : [ "[Assignment: organization-defined user actions]" ],
+              "param-id" : "ac-14_prm_1"
+            } ],
+            "description" : "Mysys AC-14 Part a",
+            "uuid" : "d747ae88-8fe3-47ea-9559-2dfc73c39655"
+          } ],
+          "uuid" : "76232e30-b6e9-4538-ade2-736cf8b5773a"
+        } ],
+        "uuid" : "f10ddfc2-c18e-4281-a71b-e3227b870047",
+        "props" : [ {
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "name" : "implementation-status",
+          "value" : "implemented"
+        }, {
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "name" : "control-origination",
+          "value" : "sp-system",
+          "remarks" : "Inherited from pre-existing FedRAMP Authorization for mysys-AC-14-PA-System-Abbrev , 5/13/2022"
+        } ]
+      } ]
+    },
+    "import-profile" : {
+      "href" : "https://raw.githubusercontent.com/usnistgov/oscal-content/v1.0.0/nist.gov/SP800-53/rev4/json/NIST_SP-800-53_rev4_MODERATE-baseline_profile.json"
+    },
+    "system-characteristics" : {
+      "data-flow" : {
+        "description" : "The system data flow",
+        "diagrams" : [ {
+          "description" : "Data flows throughout the system",
+          "caption" : "Data Flow Diagram",
+          "links" : [ {
+            "rel" : "diagram",
+            "href" : "#5cfbc4f7-b7f0-4218-b457-ce04c805e2c9"
+          } ],
+          "uuid" : "39da80c2-dce7-44e3-971d-b44702e5e9cf"
+        } ]
+      },
+      "system-ids" : [ {
+        "identifier-type" : "https://ietf.org/rfc/rfc4122",
+        "id" : "d7456980-9277-4dcb-83cf-f8ff0442623b"
+      } ],
+      "authorization-boundary" : {
+        "description" : "The description of the authorization boundary would go here.",
+        "diagrams" : [ {
+          "description" : "A diagram-specific explanation.",
+          "caption" : "Authorization Boundary Diagram",
+          "links" : [ {
+            "rel" : "diagram",
+            "href" : "#a2fc103a-9fe6-433d-a83b-44a33db1564b"
+          } ],
+          "uuid" : "bde155b3-6973-4bc7-9aa4-a4f6803968eb"
+        } ]
+      },
+      "description" : "This is an example of a system that provides enterprise logging and log auditing capabilities.",
+      "security-sensitivity-level" : "moderate",
+      "security-impact-level" : {
+        "security-objective-integrity" : "fips-199-moderate",
+        "security-objective-availability" : "fips-199-low",
+        "security-objective-confidentiality" : "fips-199-moderate"
+      },
+      "system-information" : {
+        "information-types" : [ {
+          "categorizations" : [ {
+            "system" : "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+            "information-type-ids" : [ "C.3.5.8" ]
+          } ],
+          "confidentiality-impact" : {
+            "base" : "fips-199-moderate"
+          },
+          "integrity-impact" : {
+            "base" : "fips-199-moderate"
+          },
+          "description" : "This system maintains historical logging and auditing information for all client devices connected to this system.",
+          "availability-impact" : {
+            "base" : "fips-199-low"
+          },
+          "title" : "System and Network Monitoring",
+          "uuid" : "7d28ac6e-5970-4f4c-a508-5a3715f0f02b"
+        } ]
+      },
+      "props" : [ {
+        "name" : "deployment-model",
+        "value" : "private"
+      }, {
+        "name" : "service-models",
+        "value" : "iaas"
+      } ],
+      "system-name" : "Enterprise Logging and Auditing System",
+      "network-architecture" : {
+        "description" : "The system network architecture",
+        "diagrams" : [ {
+          "description" : "Client devices connect to switches which connect to a router which connects to the internet",
+          "caption" : "Network Architecture Diagram",
+          "links" : [ {
+            "rel" : "diagram",
+            "href" : "#e9a5474b-3d71-42df-9e38-f490407336c2"
+          } ],
+          "uuid" : "7afc375f-de44-452a-a7d2-d38c76713fa5"
+        }, {
+          "description" : "Another sample network architecture",
+          "caption" : "Sample network diagram",
+          "links" : [ {
+            "rel" : "diagram",
+            "href" : "https://upload.wikimedia.org/wikipedia/commons/1/12/Sample-network-diagram.png"
+          } ],
+          "uuid" : "c7bb2b50-25ca-44db-92eb-e5fca20df751"
+        } ]
+      },
+      "status" : {
+        "state" : "other",
+        "remarks" : "This is an example, and is not intended to be implemented as a system"
+      }
+    },
+    "back-matter" : {
+      "resources" : [ {
+        "description" : "This is a test diagram",
+        "title" : "Some Diagram",
+        "rlinks" : [ {
+          "href" : "../resource-content/authz-boundary.png",
+          "media-type" : "image/png"
+        } ],
+        "uuid" : "a2fc103a-9fe6-433d-a83b-44a33db1564b"
+      }, {
+        "description" : "A test network architecture diagram",
+        "title" : "Network Architecture Diagram 1",
+        "rlinks" : [ {
+          "href" : "../resource-content/network-diagram.png",
+          "media-type" : "image/png"
+        } ],
+        "uuid" : "e9a5474b-3d71-42df-9e38-f490407336c2"
+      }, {
+        "description" : "A basic data flow diagram",
+        "title" : "Data Flow",
+        "rlinks" : [ {
+          "href" : "../resource-content/data-flow.png",
+          "media-type" : "image/png"
+        } ],
+        "uuid" : "5cfbc4f7-b7f0-4218-b457-ce04c805e2c9"
+      } ]
+    },
+    "uuid" : "cff8385f-108e-40a5-8f7a-82f3dc0eaba8"
+  }
+}

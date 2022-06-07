@@ -2,8 +2,8 @@
   "system-security-plan" : {
     "uuid" : "cff8385f-108e-40a5-8f7a-82f3dc0eaba8",
     "metadata" : {
-      "title" : "Enterprise Logging and Auditing System Security Plan",
-      "last-modified" : "2022-06-07T18:33:53.49294Z",
+      "title" : "Another SSP",
+      "last-modified" : "2022-06-07T18:34:55.952823Z",
       "version" : "1.0",
       "oscal-version" : "1.0.0",
       "roles" : [ {

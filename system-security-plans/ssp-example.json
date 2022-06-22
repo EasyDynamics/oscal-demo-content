@@ -2,8 +2,8 @@
   "system-security-plan" : {
     "uuid" : "cff8385f-108e-40a5-8f7a-82f3dc0eaba8",
     "metadata" : {
-      "title" : "Another SSP",
-      "last-modified" : "2022-06-07T18:34:55.952823Z",
+      "title" : "Another SSP 2",
+      "last-modified" : "2022-06-22T18:53:13.697735Z",
       "version" : "1.0",
       "oscal-version" : "1.0.0",
       "roles" : [ {
@@ -386,6 +386,9 @@
             } ]
           } ]
         } ]
+      }, {
+        "uuid" : "bd5dee47-7b1a-4b7e-aa18-cfaed185a72e",
+        "control-id" : "ac-6"
       } ]
     },
     "back-matter" : {

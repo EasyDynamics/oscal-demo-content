@@ -377,7 +377,7 @@
           "caption" : "Sample network diagram",
           "links" : [ {
             "rel" : "diagram",
-            "href" : "https://upload.wikimedia.org/wikipedia/commons/1/12/Sample-network-diagram.png"
+            "href" : "#d3ffc03c-bf2d-4955-90cd-075687ed669a"
           } ],
           "uuid" : "c7bb2b50-25ca-44db-92eb-e5fca20df751"
         } ]
@@ -404,6 +404,14 @@
           "media-type" : "image/png"
         } ],
         "uuid" : "e9a5474b-3d71-42df-9e38-f490407336c2"
+      }, {
+        "description" : "A test network architecture diagram",
+        "title" : "Network Architecture Diagram 2",
+        "rlinks" : [ {
+          "href" : "https://upload.wikimedia.org/wikipedia/commons/1/12/Sample-network-diagram.png",
+          "media-type" : "image/png"
+        } ],
+        "uuid" : "d3ffc03c-bf2d-4955-90cd-075687ed669a"
       }, {
         "description" : "A basic data flow diagram",
         "title" : "Data Flow",

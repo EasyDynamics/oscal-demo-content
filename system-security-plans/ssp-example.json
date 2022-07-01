@@ -3,7 +3,7 @@
     "uuid" : "cff8385f-108e-40a5-8f7a-82f3dc0eaba8",
     "metadata" : {
       "title" : "Enterprise Logging and Auditing System Security Plan",
-      "last-modified" : "2022-07-01T15:52:29.233481Z",
+      "last-modified" : "2022-07-01T15:59:01.309675Z",
       "version" : "1.0",
       "oscal-version" : "1.0.0",
       "roles" : [ {
@@ -383,6 +383,22 @@
             "set-parameters" : [ {
               "param-id" : "au-1_prm_3",
               "values" : [ "annually, and other times as necessary in response to regulatory or organizational changes" ]
+            } ]
+          } ]
+        } ]
+      }, {
+        "uuid" : "1f78083c-0dab-4068-a1f8-02a2b61e0458",
+        "control-id" : "ac-2",
+        "statements" : [ {
+          "statement-id" : "ac-2.2_smt",
+          "uuid" : "a0e3f96d-308d-42ad-a8a3-baad92e6f601",
+          "by-components" : [ {
+            "component-uuid": "795533ab-9427-4abe-820f-0b571bacfe6d",
+            "uuid" : "75c54953-7436-4041-8c48-c926a2ebf5f3",
+            "description" : "example description",
+            "set-parameters" : [ {
+              "param-id" : "ac-2.2_prm_1",
+              "values" : [ "removes" ]
             } ]
           } ]
         } ]

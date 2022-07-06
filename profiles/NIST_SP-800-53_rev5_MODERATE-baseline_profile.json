@@ -56,7 +56,7 @@
       },
       "imports": [
         {
-          "href": "NIST_SP-800-53_rev5_catalog.json",
+          "href": "#67596688-1702-42a1-a086-d46a028c04a8",
           "include-controls": [
             {
               "with-ids": [
@@ -354,6 +354,20 @@
       ],
       "merge": {
         "as-is": true
+      },
+      "back-matter": {
+        "resources": [
+          {
+            "uuid": "67596688-1702-42a1-a086-d46a028c04a8",
+            "description": "Electronic Version of NIST SP 800-53 Rev 5 Controls and SP 800-53A Rev 5 Assessment Procedures",
+            "rlinks": [
+              {
+                "href": "https://raw.githubusercontent.com/usnistgov/oscal-content/b97d0c0f682d6686c64077678f5e409427972f23/nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_catalog.json",
+                "media-type": "application/oscal.catalog+json"
+              }
+            ]
+          }
+        ]
       }
     }
   }

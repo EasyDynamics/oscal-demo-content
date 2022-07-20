@@ -56,7 +56,7 @@
       },
       "imports": [
         {
-          "href": "#67596688-1702-42a1-a086-d46a028c04a8",
+          "href": "NIST_SP-800-53_rev5_catalog.json",
           "include-controls": [
             {
               "with-ids": [

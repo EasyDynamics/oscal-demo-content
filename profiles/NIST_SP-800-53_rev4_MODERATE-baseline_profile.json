@@ -21,7 +21,9 @@
           "uuid": "29dd471e-7206-4388-857b-47673c04c4c9",
           "type": "organization",
           "name": "Joint Task Force, Transformation Initiative",
-          "email-addresses": ["sec-cert@nist.gov"],
+          "email-addresses": [
+            "sec-cert@nist.gov"
+          ],
           "addresses": [
             {
               "addr-lines": [
@@ -40,11 +42,15 @@
       "responsible-parties": [
         {
           "role-id": "creator",
-          "party-uuids": ["316876e2-5c7b-4a60-a488-2ed977238f04"]
+          "party-uuids": [
+            "316876e2-5c7b-4a60-a488-2ed977238f04"
+          ]
         },
         {
           "role-id": "contact",
-          "party-uuids": ["316876e2-5c7b-4a60-a488-2ed977238f04"]
+          "party-uuids": [
+            "316876e2-5c7b-4a60-a488-2ed977238f04"
+          ]
         }
       ]
     },

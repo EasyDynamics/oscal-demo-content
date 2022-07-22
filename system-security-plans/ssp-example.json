@@ -48,24 +48,25 @@
       "description": "This is an example of a system that provides enterprise logging and log auditing capabilities.",
       "system-ids": [
         {
-          "identifier-type": "https://ietf.org/rfc/rfc4122",
-          "id": "d7456980-9277-4dcb-83cf-f8ff0442623b"
+          "id": "d7456980-9277-4dcb-83cf-f8ff0442623b",
+          "identifier-type": "https://ietf.org/rfc/rfc4122"
         }
       ],
       "security-sensitivity-level": "moderate",
-
       "system-information": {
         "information-types": [
           {
             "uuid": "7d28ac6e-5970-4f4c-a508-5a3715f0f02b",
             "title": "System and Network Monitoring",
-            "description": "This system maintains historical logging and auditing information for all client devices connected to this system.",
             "categorizations": [
               {
                 "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
-                "information-type-ids": ["C.3.5.8"]
+                "information-type-ids": [
+                  "C.3.5.8"
+                ]
               }
             ],
+            "description": "This system maintains historical logging and auditing information for all client devices connected to this system.",
             "confidentiality-impact": {
               "base": "fips-199-moderate"
             },
@@ -98,87 +99,90 @@
         }
       ],
       "authorization-boundary": {
-        "description": "The description of the authorization boundary would go here.",
-        "diagrams": [
-          {
-            "uuid": "bde155b3-6973-4bc7-9aa4-a4f6803968eb",
-            "description": "A diagram-specific explanation.",
-            "links": [
-              {
-                "href": "#a2fc103a-9fe6-433d-a83b-44a33db1564b",
-                "rel": "diagram"
-              }
-            ],
-            "caption": "Authorization Boundary Diagram"
-          }
-        ]
+        "description": "The description of the authorization boundary would go here."
       }
     },
     "system-implementation": {
+      "remarks": "This is a partial implementation that addresses the logging server portion of the auditing system.",
       "users": [
         {
           "uuid": "9824089b-322c-456f-86c4-4111c4200f69",
           "title": "System Administrator",
+          "role-ids": [
+            "asset-administrator"
+          ],
           "props": [
             {
               "name": "type",
               "value": "internal"
             }
-          ],
-          "role-ids": ["asset-administrator"]
+          ]
         },
         {
           "uuid": "ae8de94c-835d-4303-83b1-114b6a117a07",
           "title": "Audit Team",
+          "role-ids": [
+            "asset-owner"
+          ],
           "props": [
             {
               "name": "type",
               "value": "internal"
             }
-          ],
-          "role-ids": ["asset-owner"]
+          ]
         },
         {
           "uuid": "372ce7a3-92b0-437e-a98c-24d29f9bfab8",
           "title": "Legal Department",
+          "role-ids": [
+            "legal-officer"
+          ],
           "props": [
             {
               "name": "type",
               "value": "internal"
             }
-          ],
-          "role-ids": ["legal-officer"]
+          ]
         }
       ],
       "components": [
         {
           "uuid": "e00acdcf-911b-437d-a42f-b0b558cc4f03",
-          "type": "software",
           "title": "Logging Server",
           "description": "Provides a means for hosts to publish logged events to a central server.",
           "status": {
             "state": "operational"
           },
+          "type": "software",
           "responsible-roles": [
             {
               "role-id": "provider",
-              "party-uuids": ["96c362ee-a012-4e07-92f3-486ab303b0e7"]
+              "party-uuids": [
+                "96c362ee-a012-4e07-92f3-486ab303b0e7"
+              ]
             },
             {
               "role-id": "asset-owner",
-              "party-uuids": ["3b2a5599-cc37-403f-ae36-5708fa804b27"]
+              "party-uuids": [
+                "3b2a5599-cc37-403f-ae36-5708fa804b27"
+              ]
             },
             {
               "role-id": "asset-administrator",
-              "party-uuids": ["833ac398-5c9a-4e6b-acba-2a9c11399da0"]
+              "party-uuids": [
+                "833ac398-5c9a-4e6b-acba-2a9c11399da0"
+              ]
             }
           ]
         },
         {
           "uuid": "795533ab-9427-4abe-820f-0b571bacfe6d",
-          "type": "policy",
           "title": "Enterprise Logging, Monitoring, and Alerting Policy",
+          "type": "policy",
           "description": "Requires all components to send logs to the enterprise logging solution\n\n- Requires all components synchronize their time with the appropriate enterprise time service, and at what frequency.\n\n- Identifies the events that must be captured\n\n- Identifies who is responsible/accountable for performing these functions",
+          "status": {
+            "state": "operational"
+          },
           "props": [
             {
               "name": "version",
@@ -189,97 +193,102 @@
               "value": "20181015"
             }
           ],
-          "status": {
-            "state": "operational"
-          },
           "responsible-roles": [
             {
               "role-id": "maintainer",
-              "party-uuids": ["ec485dcf-2519-43f5-8e7d-014cc315332d"]
+              "party-uuids": [
+                "ec485dcf-2519-43f5-8e7d-014cc315332d"
+              ]
             }
           ]
         },
         {
           "uuid": "941e2a87-46f4-4b3e-9e87-bbd187091ca1",
-          "type": "process",
           "title": "System Integration Process",
+          "type": "process",
           "description": "Ensures proper integration into the enterprise as new systems are brought into production.",
+          "status": {
+            "state": "operational"
+          },
           "props": [
             {
               "name": "last-modified-date",
               "value": "20181015"
             }
           ],
-          "links": [
-            {
-              "href": "#795533ab-9427-4abe-820f-0b571bacfe6d",
-              "rel": "implements-policy",
-              "text": "Ensures logs from components in new system are able to published to the logging server. Ensures log monitoring capabilities recognize new system as authorized."
-            }
-          ],
-          "status": {
-            "state": "operational"
-          },
           "responsible-roles": [
             {
               "role-id": "maintainer",
-              "party-uuids": ["0f0c15ed-565e-4ce9-8670-b54853d0bf03"]
+              "party-uuids": [
+                "0f0c15ed-565e-4ce9-8670-b54853d0bf03"
+              ]
+            }
+          ],
+          "links": [
+            {
+              "rel": "implements-policy",
+              "href": "#795533ab-9427-4abe-820f-0b571bacfe6d",
+              "text": "Ensures logs from components in new system are able to published to the logging server. Ensures log monitoring capabilities recognize new system as authorized."
             }
           ]
         },
         {
           "uuid": "fa39eb84-3014-46b4-b6bc-7da10527c262",
-          "type": "process",
           "title": "Inventory Management Process",
+          "type": "process",
           "description": "Describes how new components are introduced into the system - ensures monitoring teams know about every asset that should be producing logs, thus should be monitored.",
+          "status": {
+            "state": "operational"
+          },
           "props": [
             {
               "name": "last-modified-date",
               "value": "20181015"
             }
           ],
-          "links": [
-            {
-              "href": "#795533ab-9427-4abe-820f-0b571bacfe6d",
-              "rel": "implements-policy",
-              "text": "Ensures that all host are known and authorized. Ensures that these hosts publish log events to the logging server."
-            }
-          ],
-          "status": {
-            "state": "operational"
-          },
           "responsible-roles": [
             {
               "role-id": "maintainer",
-              "party-uuids": ["0f0c15ed-565e-4ce9-8670-b54853d0bf03"]
+              "party-uuids": [
+                "0f0c15ed-565e-4ce9-8670-b54853d0bf03"
+              ]
+            }
+          ],
+          "links": [
+            {
+              "rel": "implements-policy",
+              "href": "#795533ab-9427-4abe-820f-0b571bacfe6d",
+              "text": "Ensures that all host are known and authorized. Ensures that these hosts publish log events to the logging server."
             }
           ]
         },
         {
           "uuid": "4938767c-dd8b-4ea4-b74a-fafffd48ac99",
-          "type": "guidance",
           "title": "Configuration Management Guidance",
+          "type": "guidance",
           "description": "Describes how to configure a component to ensure its logs are transmitted to Splunk in the appropriate format. Also describes how to configure time synchronization.",
+          "status": {
+            "state": "operational"
+          },
           "props": [
             {
               "name": "last-modified-date",
               "value": "20181015"
             }
           ],
-          "links": [
-            {
-              "href": "#795533ab-9427-4abe-820f-0b571bacfe6d",
-              "rel": "implements-policy",
-              "text": "Ensures that all host are configured to publish log events to the logging server."
-            }
-          ],
-          "status": {
-            "state": "operational"
-          },
           "responsible-roles": [
             {
               "role-id": "maintainer",
-              "party-uuids": ["0f0c15ed-565e-4ce9-8670-b54853d0bf03"]
+              "party-uuids": [
+                "0f0c15ed-565e-4ce9-8670-b54853d0bf03"
+              ]
+            }
+          ],
+          "links": [
+            {
+              "rel": "implements-policy",
+              "href": "#795533ab-9427-4abe-820f-0b571bacfe6d",
+              "text": "Ensures that all host are configured to publish log events to the logging server."
             }
           ]
         }
@@ -297,11 +306,15 @@
           "responsible-parties": [
             {
               "role-id": "asset-administrator",
-              "party-uuids": ["833ac398-5c9a-4e6b-acba-2a9c11399da0"]
+              "party-uuids": [
+                "833ac398-5c9a-4e6b-acba-2a9c11399da0"
+              ]
             },
             {
               "role-id": "asset-owner",
-              "party-uuids": ["3b2a5599-cc37-403f-ae36-5708fa804b27"]
+              "party-uuids": [
+                "3b2a5599-cc37-403f-ae36-5708fa804b27"
+              ]
             }
           ],
           "implemented-components": [
@@ -313,8 +326,7 @@
             }
           ]
         }
-      ],
-      "remarks": "This is a partial implementation that addresses the logging server portion of the auditing system."
+      ]
     },
     "control-implementation": {
       "description": "This is the control implementation for the system.",
@@ -429,7 +441,6 @@
                 {
                   "component-uuid": "795533ab-9427-4abe-820f-0b571bacfe6d",
                   "uuid": "23903c59-1327-46f0-9c28-09ec7f144214",
-                  "description": "The legal department reviews this policy annually, and other times as necessary in response to regulatory or organizational changes. The legal department updates the policy as needed based on these reviews.",
                   "set-parameters": [
                     {
                       "param-id": "au-1_prm_2",
@@ -437,7 +448,8 @@
                         "annually, and other times as necessary in response to regulatory or organizational changes"
                       ]
                     }
-                  ]
+                  ],
+                  "description": "The legal department reviews this policy annually, and other times as necessary in response to regulatory or organizational changes. The legal department updates the policy as needed based on these reviews."
                 }
               ]
             },
@@ -448,7 +460,6 @@
                 {
                   "component-uuid": "941e2a87-46f4-4b3e-9e87-bbd187091ca1",
                   "uuid": "0c45b6e2-f85b-4656-a6cc-2a302d184720",
-                  "description": "The IT department reviews this process annually, and other times as necessary in response to regulatory or organizational changes. The IT department updates the policy as needed based on these reviews.",
                   "set-parameters": [
                     {
                       "param-id": "au-1_prm_3",
@@ -456,12 +467,12 @@
                         "annually, and other times as necessary in response to regulatory or organizational changes"
                       ]
                     }
-                  ]
+                  ],
+                  "description": "The IT department reviews this process annually, and other times as necessary in response to regulatory or organizational changes. The IT department updates the policy as needed based on these reviews."
                 },
                 {
                   "component-uuid": "fa39eb84-3014-46b4-b6bc-7da10527c262",
                   "uuid": "094f02ce-4b7a-405c-90a5-ab4d95133f74",
-                  "description": "The IT department reviews this process annually, and other times as necessary in response to regulatory or organizational changes. The IT department updates the policy as needed based on these reviews.",
                   "set-parameters": [
                     {
                       "param-id": "au-1_prm_3",
@@ -469,12 +480,12 @@
                         "annually, and other times as necessary in response to regulatory or organizational changes"
                       ]
                     }
-                  ]
+                  ],
+                  "description": "The IT department reviews this process annually, and other times as necessary in response to regulatory or organizational changes. The IT department updates the policy as needed based on these reviews."
                 },
                 {
                   "component-uuid": "4938767c-dd8b-4ea4-b74a-fafffd48ac99",
                   "uuid": "7ec8b7ec-d931-4055-ac74-6d288d636787",
-                  "description": "The IT department reviews this process annually, and other times as necessary in response to regulatory or organizational changes. The IT department updates the policy as needed based on these reviews",
                   "set-parameters": [
                     {
                       "param-id": "au-1_prm_3",
@@ -482,7 +493,8 @@
                         "annually, and other times as necessary in response to regulatory or organizational changes"
                       ]
                     }
-                  ]
+                  ],
+                  "description": "The IT department reviews this process annually, and other times as necessary in response to regulatory or organizational changes. The IT department updates the policy as needed based on these reviews"
                 }
               ]
             }

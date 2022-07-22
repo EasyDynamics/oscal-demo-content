@@ -37,9 +37,7 @@
           "uuid": "41a93829-b76b-43ec-b9e7-250553511549",
           "type": "organization",
           "name": "Joint Task Force, Interagency Working Group",
-          "email-addresses": [
-            "sec-cert@nist.gov"
-          ],
+          "email-addresses": ["sec-cert@nist.gov"],
           "addresses": [
             {
               "addr-lines": [
@@ -58,15 +56,11 @@
       "responsible-parties": [
         {
           "role-id": "creator",
-          "party-uuids": [
-            "41a93829-b76b-43ec-b9e7-250553511549"
-          ]
+          "party-uuids": ["41a93829-b76b-43ec-b9e7-250553511549"]
         },
         {
           "role-id": "contact",
-          "party-uuids": [
-            "41a93829-b76b-43ec-b9e7-250553511549"
-          ]
+          "party-uuids": ["41a93829-b76b-43ec-b9e7-250553511549"]
         }
       ]
     },
@@ -772,10 +766,7 @@
                   {
                     "id": "ac-2.2_prm_1",
                     "select": {
-                      "choice": [
-                        "remove",
-                        "disable"
-                      ]
+                      "choice": ["remove", "disable"]
                     }
                   },
                   {
@@ -3020,12 +3011,7 @@
                     "id": "ac-4.8_prm_3",
                     "select": {
                       "how-many": "one-or-more",
-                      "choice": [
-                        "Block",
-                        "Strip",
-                        "Modify",
-                        "Quarantine"
-                      ]
+                      "choice": ["Block", "Strip", "Modify", "Quarantine"]
                     }
                   },
                   {
@@ -7312,10 +7298,7 @@
                     "id": "ac-18.1_prm_1",
                     "select": {
                       "how-many": "one-or-more",
-                      "choice": [
-                        "users",
-                        "devices"
-                      ]
+                      "choice": ["users", "devices"]
                     }
                   }
                 ],
@@ -8642,10 +8625,7 @@
               {
                 "id": "ac-24_prm_1",
                 "select": {
-                  "choice": [
-                    "Establish procedures",
-                    "Implement mechanisms"
-                  ]
+                  "choice": ["Establish procedures", "Implement mechanisms"]
                 }
               },
               {
@@ -11237,10 +11217,7 @@
                   {
                     "id": "au-5.3_prm_1",
                     "select": {
-                      "choice": [
-                        "reject",
-                        "delay"
-                      ]
+                      "choice": ["reject", "delay"]
                     }
                   }
                 ],
@@ -11828,11 +11805,7 @@
                     "id": "au-6.7_prm_1",
                     "select": {
                       "how-many": "one-or-more",
-                      "choice": [
-                        "system process",
-                        "role",
-                        "user"
-                      ]
+                      "choice": ["system process", "role", "user"]
                     }
                   }
                 ],
@@ -12586,10 +12559,7 @@
                     "id": "au-9.5_prm_1",
                     "select": {
                       "how-many": "one-or-more",
-                      "choice": [
-                        "movement",
-                        "deletion"
-                      ]
+                      "choice": ["movement", "deletion"]
                     }
                   },
                   {
@@ -13784,12 +13754,7 @@
                 "id": "au-14_prm_2",
                 "select": {
                   "how-many": "one-or-more",
-                  "choice": [
-                    "record",
-                    "view",
-                    "hear",
-                    "log"
-                  ]
+                  "choice": ["record", "view", "hear", "log"]
                 }
               },
               {
@@ -14716,10 +14681,7 @@
                   {
                     "id": "ca-2.2_prm_2",
                     "select": {
-                      "choice": [
-                        "announced",
-                        "unannounced"
-                      ]
+                      "choice": ["announced", "unannounced"]
                     }
                   },
                   {
@@ -16363,10 +16325,7 @@
                   {
                     "id": "ca-8.3_prm_2",
                     "select": {
-                      "choice": [
-                        "announced",
-                        "unannounced"
-                      ]
+                      "choice": ["announced", "unannounced"]
                     }
                   }
                 ],
@@ -20078,11 +20037,7 @@
                     "id": "cm-8.4_prm_1",
                     "select": {
                       "how-many": "one-or-more",
-                      "choice": [
-                        "name",
-                        "position",
-                        "role"
-                      ]
+                      "choice": ["name", "position", "role"]
                     }
                   }
                 ],
@@ -21786,10 +21741,7 @@
                   {
                     "id": "cp-2.3_prm_1",
                     "select": {
-                      "choice": [
-                        "all",
-                        "essential"
-                      ]
+                      "choice": ["all", "essential"]
                     }
                   },
                   {
@@ -21859,10 +21811,7 @@
                   {
                     "id": "cp-2.5_prm_1",
                     "select": {
-                      "choice": [
-                        "all",
-                        "essential"
-                      ]
+                      "choice": ["all", "essential"]
                     }
                   }
                 ],
@@ -21903,10 +21852,7 @@
                   {
                     "id": "cp-2.6_prm_1",
                     "select": {
-                      "choice": [
-                        "all",
-                        "essential"
-                      ]
+                      "choice": ["all", "essential"]
                     }
                   }
                 ],
@@ -21984,10 +21930,7 @@
                   {
                     "id": "cp-2.8_prm_1",
                     "select": {
-                      "choice": [
-                        "all",
-                        "essential"
-                      ]
+                      "choice": ["all", "essential"]
                     }
                   }
                 ],
@@ -25002,11 +24945,7 @@
                     "id": "ia-2.6_prm_1",
                     "select": {
                       "how-many": "one-or-more",
-                      "choice": [
-                        "local",
-                        "network",
-                        "remote"
-                      ]
+                      "choice": ["local", "network", "remote"]
                     }
                   },
                   {
@@ -25343,11 +25282,7 @@
                 "id": "ia-3_prm_2",
                 "select": {
                   "how-many": "one-or-more",
-                  "choice": [
-                    "local",
-                    "remote",
-                    "network"
-                  ]
+                  "choice": ["local", "remote", "network"]
                 }
               }
             ],
@@ -25433,11 +25368,7 @@
                     "id": "ia-3.1_prm_2",
                     "select": {
                       "how-many": "one-or-more",
-                      "choice": [
-                        "local",
-                        "remote",
-                        "network"
-                      ]
+                      "choice": ["local", "remote", "network"]
                     }
                   }
                 ],
@@ -27098,10 +27029,7 @@
                   {
                     "id": "ia-5.16_prm_2",
                     "select": {
-                      "choice": [
-                        "in person",
-                        "by a trusted external party"
-                      ]
+                      "choice": ["in person", "by a trusted external party"]
                     }
                   },
                   {
@@ -28161,10 +28089,7 @@
                   {
                     "id": "ia-12.5_prm_1",
                     "select": {
-                      "choice": [
-                        "registration code",
-                        "notice of proofing"
-                      ]
+                      "choice": ["registration code", "notice of proofing"]
                     }
                   }
                 ],
@@ -34436,10 +34361,7 @@
               {
                 "id": "mp-7_prm_1",
                 "select": {
-                  "choice": [
-                    "Restrict",
-                    "Prohibit"
-                  ]
+                  "choice": ["Restrict", "Prohibit"]
                 }
               },
               {
@@ -35365,10 +35287,7 @@
                 "id": "pe-3_prm_2",
                 "select": {
                   "how-many": "one-or-more",
-                  "choice": [
-                    " {{ insert: param, pe-3_prm_3 }} ",
-                    "guards"
-                  ]
+                  "choice": [" {{ insert: param, pe-3_prm_3 }} ", "guards"]
                 }
               },
               {
@@ -35829,10 +35748,7 @@
                     "id": "pe-3.5_prm_2",
                     "select": {
                       "how-many": "one-or-more",
-                      "choice": [
-                        "detect",
-                        "prevent"
-                      ]
+                      "choice": ["detect", "prevent"]
                     }
                   },
                   {
@@ -37019,10 +36935,7 @@
                   {
                     "id": "pe-11.1_prm_1",
                     "select": {
-                      "choice": [
-                        "manually",
-                        "automatically"
-                      ]
+                      "choice": ["manually", "automatically"]
                     }
                   }
                 ],
@@ -37063,10 +36976,7 @@
                   {
                     "id": "pe-11.2_prm_1",
                     "select": {
-                      "choice": [
-                        "manually",
-                        "automatically"
-                      ]
+                      "choice": ["manually", "automatically"]
                     }
                   },
                   {
@@ -53521,12 +53431,7 @@
                 "id": "sa-11_prm_1",
                 "select": {
                   "how-many": "one-or-more",
-                  "choice": [
-                    "unit",
-                    "integration",
-                    "system",
-                    "regression"
-                  ]
+                  "choice": ["unit", "integration", "system", "regression"]
                 }
               },
               {
@@ -57438,10 +57343,7 @@
               {
                 "id": "sc-5_prm_1",
                 "select": {
-                  "choice": [
-                    "Protect against",
-                    "Limit"
-                  ]
+                  "choice": ["Protect against", "Limit"]
                 }
               },
               {
@@ -57744,10 +57646,7 @@
               {
                 "id": "sc-7_prm_1",
                 "select": {
-                  "choice": [
-                    "physically",
-                    "logically"
-                  ]
+                  "choice": ["physically", "logically"]
                 }
               }
             ],
@@ -59288,10 +59187,7 @@
                   {
                     "id": "sc-7.29_prm_1",
                     "select": {
-                      "choice": [
-                        "physically",
-                        "logically"
-                      ]
+                      "choice": ["physically", "logically"]
                     }
                   },
                   {
@@ -59339,10 +59235,7 @@
                 "id": "sc-8_prm_1",
                 "select": {
                   "how-many": "one-or-more",
-                  "choice": [
-                    "confidentiality",
-                    "integrity"
-                  ]
+                  "choice": ["confidentiality", "integrity"]
                 }
               }
             ],
@@ -59525,10 +59418,7 @@
                     "id": "sc-8.2_prm_1",
                     "select": {
                       "how-many": "one-or-more",
-                      "choice": [
-                        "confidentiality",
-                        "integrity"
-                      ]
+                      "choice": ["confidentiality", "integrity"]
                     }
                   }
                 ],
@@ -59782,10 +59672,7 @@
               {
                 "id": "sc-11_prm_1",
                 "select": {
-                  "choice": [
-                    "physically",
-                    "logically"
-                  ]
+                  "choice": ["physically", "logically"]
                 }
               },
               {
@@ -60117,10 +60004,7 @@
                   {
                     "id": "sc-12.2_prm_1",
                     "select": {
-                      "choice": [
-                        "NIST FIPS-validated",
-                        "NSA-approved"
-                      ]
+                      "choice": ["NIST FIPS-validated", "NSA-approved"]
                     }
                   }
                 ],
@@ -60697,10 +60581,7 @@
                     "id": "sc-15.1_prm_1",
                     "select": {
                       "how-many": "one-or-more",
-                      "choice": [
-                        "physical",
-                        "logical"
-                      ]
+                      "choice": ["physical", "logical"]
                     }
                   }
                 ],
@@ -62190,10 +62071,7 @@
                 "id": "sc-28_prm_1",
                 "select": {
                   "how-many": "one-or-more",
-                  "choice": [
-                    "confidentiality",
-                    "integrity"
-                  ]
+                  "choice": ["confidentiality", "integrity"]
                 }
               },
               {
@@ -62864,10 +62742,7 @@
                 "id": "sc-31_prm_1",
                 "select": {
                   "how-many": "one-or-more",
-                  "choice": [
-                    "storage",
-                    "timing"
-                  ]
+                  "choice": ["storage", "timing"]
                 }
               }
             ],
@@ -62977,10 +62852,7 @@
                     "id": "sc-31.2_prm_1",
                     "select": {
                       "how-many": "one-or-more",
-                      "choice": [
-                        "storage",
-                        "timing"
-                      ]
+                      "choice": ["storage", "timing"]
                     }
                   },
                   {
@@ -63070,10 +62942,7 @@
               {
                 "id": "sc-32_prm_2",
                 "select": {
-                  "choice": [
-                    "physical",
-                    "logical"
-                  ]
+                  "choice": ["physical", "logical"]
                 }
               },
               {
@@ -63473,10 +63342,7 @@
               {
                 "id": "sc-36_prm_1",
                 "select": {
-                  "choice": [
-                    "physical locations",
-                    "logical domains"
-                  ]
+                  "choice": ["physical locations", "logical domains"]
                 }
               },
               {
@@ -64261,10 +64127,7 @@
               {
                 "id": "sc-41_prm_1",
                 "select": {
-                  "choice": [
-                    "Physically",
-                    "Logically"
-                  ]
+                  "choice": ["Physically", "Logically"]
                 }
               },
               {
@@ -64965,10 +64828,7 @@
               {
                 "id": "sc-46_prm_1",
                 "select": {
-                  "choice": [
-                    "physically",
-                    "logically"
-                  ]
+                  "choice": ["physically", "logically"]
                 }
               }
             ],
@@ -65991,10 +65851,7 @@
                 "id": "si-3_prm_1",
                 "select": {
                   "how-many": "one-or-more",
-                  "choice": [
-                    "signature based",
-                    "non-signature based"
-                  ]
+                  "choice": ["signature based", "non-signature based"]
                 }
               },
               {
@@ -66005,10 +65862,7 @@
                 "id": "si-3_prm_3",
                 "select": {
                   "how-many": "one-or-more",
-                  "choice": [
-                    "endpoint",
-                    "network entry and exit points"
-                  ]
+                  "choice": ["endpoint", "network entry and exit points"]
                 }
               },
               {
@@ -66653,10 +66507,7 @@
                 "id": "si-4_prm_5",
                 "select": {
                   "how-many": "one-or-more",
-                  "choice": [
-                    "as needed",
-                    " {{ insert: param, si-4_prm_6 }} "
-                  ]
+                  "choice": ["as needed", " {{ insert: param, si-4_prm_6 }} "]
                 }
               },
               {
@@ -70680,10 +70531,7 @@
                   {
                     "id": "si-13.5_prm_1",
                     "select": {
-                      "choice": [
-                        "real-time",
-                        "near real-time"
-                      ]
+                      "choice": ["real-time", "near real-time"]
                     }
                   },
                   {

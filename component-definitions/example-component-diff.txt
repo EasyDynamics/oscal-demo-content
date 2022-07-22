@@ -1,0 +1,8 @@
+34c34
+<             "source": "https://raw.githubusercontent.com/usnistgov/oscal-content/main/nist.gov/SP800-53/rev4/json/NIST_SP-800-53_rev4_catalog.json",
+---
+>             "source": "../../../nist.gov/SP800-53/rev4/json/NIST_SP-800-53_rev4_catalog.json",
+46c46
+<             "source": "https://raw.githubusercontent.com/GSA/fedramp-automation/master/dist/content/baselines/rev4/json/FedRAMP_rev4_HIGH-baseline_profile.json",
+---
+>             "source": "https://raw.githubusercontent.com/GSA/fedramp-automation/master/baselines/rev4/json/FedRAMP_rev4_HIGH-baseline_profile.json",

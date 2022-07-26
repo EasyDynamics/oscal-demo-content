@@ -3,7 +3,7 @@
     "uuid": "cff8385f-108e-40a5-8f7a-82f3dc0eaba8",
     "metadata": {
       "title": "Enterprise Logging and Auditing System Security Plan",
-      "last-modified": "2021-06-08T13:57:28.355446-04:00",
+      "last-modified": "2022-07-01T15:59:01.309675Z",
       "version": "1.0",
       "oscal-version": "1.0.0",
       "roles": [
@@ -61,21 +61,13 @@
             "categorizations": [
               {
                 "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
-                "information-type-ids": [
-                  "C.3.5.8"
-                ]
+                "information-type-ids": ["C.3.5.8"]
               }
             ],
             "description": "This system maintains historical logging and auditing information for all client devices connected to this system.",
-            "confidentiality-impact": {
-              "base": "fips-199-moderate"
-            },
-            "integrity-impact": {
-              "base": "fips-199-moderate"
-            },
-            "availability-impact": {
-              "base": "fips-199-low"
-            }
+            "confidentiality-impact": {"base": "fips-199-moderate"},
+            "integrity-impact": {"base": "fips-199-moderate"},
+            "availability-impact": {"base": "fips-199-low"}
           }
         ]
       },
@@ -99,7 +91,63 @@
         }
       ],
       "authorization-boundary": {
-        "description": "The description of the authorization boundary would go here."
+        "description": "The description of the authorization boundary would go here.",
+        "diagrams": [
+          {
+            "uuid": "bde155b3-6973-4bc7-9aa4-a4f6803968eb",
+            "description": "A diagram-specific explanation.",
+            "links": [
+              {
+                "href": "#a2fc103a-9fe6-433d-a83b-44a33db1564b",
+                "rel": "diagram"
+              }
+            ],
+            "caption": "Authorization Boundary Diagram"
+          }
+        ]
+      },
+      "network-architecture": {
+        "description": "The system network architecture",
+        "diagrams": [
+          {
+            "uuid": "7afc375f-de44-452a-a7d2-d38c76713fa5",
+            "description": "Client devices connect to switches which connect to a router which connects to the internet",
+            "links": [
+              {
+                "href": "#e9a5474b-3d71-42df-9e38-f490407336c2",
+                "rel": "diagram"
+              }
+            ],
+            "caption": "Network Architecture Diagram"
+          },
+          {
+            "uuid": "c7bb2b50-25ca-44db-92eb-e5fca20df751",
+            "description": "Another sample network architecture",
+            "links": [
+              {
+                "href": "#d3ffc03c-bf2d-4955-90cd-075687ed669a",
+                "rel": "diagram"
+              }
+            ],
+            "caption": "Sample network diagram"
+          }
+        ]
+      },
+      "data-flow": {
+        "description": "The system data flow",
+        "diagrams": [
+          {
+            "uuid": "39da80c2-dce7-44e3-971d-b44702e5e9cf",
+            "description": "Data flows throughout the system",
+            "links": [
+              {
+                "href": "#5cfbc4f7-b7f0-4218-b457-ce04c805e2c9",
+                "rel": "diagram"
+              }
+            ],
+            "caption": "Data Flow Diagram"
+          }
+        ]
       }
     },
     "system-implementation": {
@@ -108,9 +156,7 @@
         {
           "uuid": "9824089b-322c-456f-86c4-4111c4200f69",
           "title": "System Administrator",
-          "role-ids": [
-            "asset-administrator"
-          ],
+          "role-ids": ["asset-administrator"],
           "props": [
             {
               "name": "type",
@@ -121,9 +167,7 @@
         {
           "uuid": "ae8de94c-835d-4303-83b1-114b6a117a07",
           "title": "Audit Team",
-          "role-ids": [
-            "asset-owner"
-          ],
+          "role-ids": ["asset-owner"],
           "props": [
             {
               "name": "type",
@@ -134,9 +178,7 @@
         {
           "uuid": "372ce7a3-92b0-437e-a98c-24d29f9bfab8",
           "title": "Legal Department",
-          "role-ids": [
-            "legal-officer"
-          ],
+          "role-ids": ["legal-officer"],
           "props": [
             {
               "name": "type",
@@ -150,28 +192,20 @@
           "uuid": "e00acdcf-911b-437d-a42f-b0b558cc4f03",
           "title": "Logging Server",
           "description": "Provides a means for hosts to publish logged events to a central server.",
-          "status": {
-            "state": "operational"
-          },
+          "status": { "state": "operational" },
           "type": "software",
           "responsible-roles": [
             {
               "role-id": "provider",
-              "party-uuids": [
-                "96c362ee-a012-4e07-92f3-486ab303b0e7"
-              ]
+              "party-uuids": ["96c362ee-a012-4e07-92f3-486ab303b0e7"]
             },
             {
               "role-id": "asset-owner",
-              "party-uuids": [
-                "3b2a5599-cc37-403f-ae36-5708fa804b27"
-              ]
+              "party-uuids": ["3b2a5599-cc37-403f-ae36-5708fa804b27"]
             },
             {
               "role-id": "asset-administrator",
-              "party-uuids": [
-                "833ac398-5c9a-4e6b-acba-2a9c11399da0"
-              ]
+              "party-uuids": ["833ac398-5c9a-4e6b-acba-2a9c11399da0"]
             }
           ]
         },
@@ -180,9 +214,7 @@
           "title": "Enterprise Logging, Monitoring, and Alerting Policy",
           "type": "policy",
           "description": "Requires all components to send logs to the enterprise logging solution\n\n- Requires all components synchronize their time with the appropriate enterprise time service, and at what frequency.\n\n- Identifies the events that must be captured\n\n- Identifies who is responsible/accountable for performing these functions",
-          "status": {
-            "state": "operational"
-          },
+          "status": {"state": "operational"},
           "props": [
             {
               "name": "version",
@@ -196,9 +228,7 @@
           "responsible-roles": [
             {
               "role-id": "maintainer",
-              "party-uuids": [
-                "ec485dcf-2519-43f5-8e7d-014cc315332d"
-              ]
+              "party-uuids": ["ec485dcf-2519-43f5-8e7d-014cc315332d"]
             }
           ]
         },
@@ -207,9 +237,7 @@
           "title": "System Integration Process",
           "type": "process",
           "description": "Ensures proper integration into the enterprise as new systems are brought into production.",
-          "status": {
-            "state": "operational"
-          },
+          "status": {"state": "operational"},
           "props": [
             {
               "name": "last-modified-date",
@@ -219,9 +247,7 @@
           "responsible-roles": [
             {
               "role-id": "maintainer",
-              "party-uuids": [
-                "0f0c15ed-565e-4ce9-8670-b54853d0bf03"
-              ]
+              "party-uuids": ["0f0c15ed-565e-4ce9-8670-b54853d0bf03"]
             }
           ],
           "links": [
@@ -237,9 +263,7 @@
           "title": "Inventory Management Process",
           "type": "process",
           "description": "Describes how new components are introduced into the system - ensures monitoring teams know about every asset that should be producing logs, thus should be monitored.",
-          "status": {
-            "state": "operational"
-          },
+          "status": {"state": "operational"},
           "props": [
             {
               "name": "last-modified-date",
@@ -249,9 +273,7 @@
           "responsible-roles": [
             {
               "role-id": "maintainer",
-              "party-uuids": [
-                "0f0c15ed-565e-4ce9-8670-b54853d0bf03"
-              ]
+              "party-uuids": ["0f0c15ed-565e-4ce9-8670-b54853d0bf03"]
             }
           ],
           "links": [
@@ -267,9 +289,7 @@
           "title": "Configuration Management Guidance",
           "type": "guidance",
           "description": "Describes how to configure a component to ensure its logs are transmitted to Splunk in the appropriate format. Also describes how to configure time synchronization.",
-          "status": {
-            "state": "operational"
-          },
+          "status": {"state": "operational"},
           "props": [
             {
               "name": "last-modified-date",
@@ -279,9 +299,7 @@
           "responsible-roles": [
             {
               "role-id": "maintainer",
-              "party-uuids": [
-                "0f0c15ed-565e-4ce9-8670-b54853d0bf03"
-              ]
+              "party-uuids": ["0f0c15ed-565e-4ce9-8670-b54853d0bf03"]
             }
           ],
           "links": [
@@ -306,24 +324,16 @@
           "responsible-parties": [
             {
               "role-id": "asset-administrator",
-              "party-uuids": [
-                "833ac398-5c9a-4e6b-acba-2a9c11399da0"
-              ]
+              "party-uuids": ["833ac398-5c9a-4e6b-acba-2a9c11399da0"]
             },
             {
               "role-id": "asset-owner",
-              "party-uuids": [
-                "3b2a5599-cc37-403f-ae36-5708fa804b27"
-              ]
+              "party-uuids": ["3b2a5599-cc37-403f-ae36-5708fa804b27"]
             }
           ],
           "implemented-components": [
-            {
-              "component-uuid": "e00acdcf-911b-437d-a42f-b0b558cc4f03"
-            },
-            {
-              "component-uuid": "795533ab-9427-4abe-820f-0b571bacfe6d"
-            }
+            {"component-uuid": "e00acdcf-911b-437d-a42f-b0b558cc4f03"},
+            {"component-uuid": "795533ab-9427-4abe-820f-0b571bacfe6d"}
           ]
         }
       ]
@@ -350,9 +360,7 @@
                   "set-parameters": [
                     {
                       "param-id": "au-1_prm_1",
-                      "values": [
-                        "all staff and contractors within the organization"
-                      ]
+                      "values": ["all staff and contractors within the organization"]
                     }
                   ]
                 },
@@ -363,9 +371,7 @@
                   "set-parameters": [
                     {
                       "param-id": "au-1_prm_1",
-                      "values": [
-                        "all IT staff who administer this system when the staff member is assigned and annually through training"
-                      ]
+                      "values": ["all IT staff who administer this system when the staff member is assigned and annually through training"]
                     }
                   ]
                 },
@@ -376,9 +382,7 @@
                   "set-parameters": [
                     {
                       "param-id": "au-1_prm_1",
-                      "values": [
-                        "all IT staff who administer this system when the staff member is assigned and annually through training"
-                      ]
+                      "values": ["all IT staff who administer this system when the staff member is assigned and annually through training"]
                     }
                   ]
                 },
@@ -389,9 +393,7 @@
                   "set-parameters": [
                     {
                       "param-id": "au-1_prm_1",
-                      "values": [
-                        "all IT staff who administer this system when the staff member is assigned and annually through training"
-                      ]
+                      "values": ["all IT staff who administer this system when the staff member is assigned and annually through training"]
                     }
                   ]
                 }
@@ -463,9 +465,7 @@
                   "set-parameters": [
                     {
                       "param-id": "au-1_prm_3",
-                      "values": [
-                        "annually, and other times as necessary in response to regulatory or organizational changes"
-                      ]
+                      "values": ["annually, and other times as necessary in response to regulatory or organizational changes"]
                     }
                   ],
                   "description": "The IT department reviews this process annually, and other times as necessary in response to regulatory or organizational changes. The IT department updates the policy as needed based on these reviews."
@@ -476,9 +476,7 @@
                   "set-parameters": [
                     {
                       "param-id": "au-1_prm_3",
-                      "values": [
-                        "annually, and other times as necessary in response to regulatory or organizational changes"
-                      ]
+                      "values": ["annually, and other times as necessary in response to regulatory or organizational changes"]
                     }
                   ],
                   "description": "The IT department reviews this process annually, and other times as necessary in response to regulatory or organizational changes. The IT department updates the policy as needed based on these reviews."
@@ -489,14 +487,83 @@
                   "set-parameters": [
                     {
                       "param-id": "au-1_prm_3",
-                      "values": [
-                        "annually, and other times as necessary in response to regulatory or organizational changes"
-                      ]
+                      "values": ["annually, and other times as necessary in response to regulatory or organizational changes"]
                     }
                   ],
                   "description": "The IT department reviews this process annually, and other times as necessary in response to regulatory or organizational changes. The IT department updates the policy as needed based on these reviews"
                 }
               ]
+            }
+          ]
+        },
+        {
+          "uuid": "1f78083c-0dab-4068-a1f8-02a2b61e0458",
+          "control-id": "ac-2",
+          "statements": [
+            {
+              "statement-id": "ac-2.2_smt",
+              "uuid": "a0e3f96d-308d-42ad-a8a3-baad92e6f601",
+              "by-components": [
+                {
+                  "component-uuid": "795533ab-9427-4abe-820f-0b571bacfe6d",
+                  "uuid": "75c54953-7436-4041-8c48-c926a2ebf5f3",
+                  "description": "example description",
+                  "set-parameters": [
+                    {
+                      "param-id": "ac-2.2_prm_1",
+                      "values": ["removes"]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "a2fc103a-9fe6-433d-a83b-44a33db1564b",
+          "title": "Some Diagram",
+          "description": "This is a test diagram",
+          "rlinks": [
+            {
+              "href": "../resource-content/authz-boundary.png",
+              "media-type": "image/png"
+            }
+          ]
+        },
+        {
+          "uuid": "e9a5474b-3d71-42df-9e38-f490407336c2",
+          "title": "Network Architecture Diagram 1",
+          "description": "A test network architecture diagram",
+          "rlinks": [
+            {
+              "href": "../resource-content/network-diagram.png",
+              "media-type": "image/png"
+            }
+          ]
+        },
+        {
+          "uuid": "d3ffc03c-bf2d-4955-90cd-075687ed669a",
+          "title": "Network Architecture Diagram 2",
+          "description": "A test network architecture diagram",
+          "rlinks": [
+            {
+              "href": "https://upload.wikimedia.org/wikipedia/commons/1/12/Sample-network-diagram.png",
+              "media-type": "image/png"
+            }
+          ]
+        },
+        {
+          "uuid": "5cfbc4f7-b7f0-4218-b457-ce04c805e2c9",
+          "title": "Data Flow",
+          "description": "A basic data flow diagram",
+          "rlinks": [
+            {
+              "href": "../resource-content/data-flow.png",
+              "media-type": "image/png"
             }
           ]
         }

@@ -3,7 +3,7 @@
     "uuid": "a7ba800c-a432-44cd-9075-0862cd66da6b",
     "metadata": {
       "title": "MongoDB Component Definition Example",
-      "last-modified": "2022-07-06T18:01:43.037685Z",
+      "last-modified": "2001-08-26T23:11:47Z",
       "version": "20210826",
       "oscal-version": "1.0.0",
       "roles": [
@@ -36,7 +36,9 @@
         "responsible-roles": [
           {
             "role-id": "provider",
-            "party-uuids": ["ef7c799a-c50e-49ab-83e0-515e989e6df1"]
+            "party-uuids": [
+              "ef7c799a-c50e-49ab-83e0-515e989e6df1"
+            ]
           }
         ],
         "protocols": [

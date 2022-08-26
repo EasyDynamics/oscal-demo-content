@@ -3,7 +3,7 @@
     "uuid" : "cff8385f-108e-40a5-8f7a-82f3dc0eaba8",
     "metadata" : {
       "title" : "Enterprise Logging and Auditing System Security Plan",
-      "last-modified" : "2022-07-26T18:14:01.399311Z",
+      "last-modified" : "2022-08-22T16:09:44.103566Z",
       "version" : "1.0",
       "oscal-version" : "1.0.0",
       "roles" : [ {
@@ -13,15 +13,38 @@
       "parties" : [ {
         "uuid" : "3b2a5599-cc37-403f-ae36-5708fa804b27",
         "type" : "organization",
-        "name" : "Enterprise Asset Owners"
+        "name" : "Enterprise Asset Owners",
+        "email-addresses" : [ "owners@enterprise.org" ]
       }, {
         "uuid" : "833ac398-5c9a-4e6b-acba-2a9c11399da0",
         "type" : "organization",
-        "name" : "Enterprise Asset Administrators"
+        "name" : "Enterprise Asset Administrators",
+        "email-addresses" : [ "admins@enterprise.org", "account@email.com" ],
+        "telephone-numbers" : [ {
+          "type" : "mobile",
+          "number" : "+18005555555"
+        } ],
+        "addresses" : [ {
+          "type" : "work",
+          "addr-lines" : [ "0000 St" ],
+          "city" : "City",
+          "state" : "State",
+          "postal-code" : "0000",
+          "country" : "US"
+        } ]
       }, {
         "uuid" : "ec485dcf-2519-43f5-8e7d-014cc315332d",
         "type" : "organization",
-        "name" : "Legal Department"
+        "name" : "Legal Department",
+        "telephone-numbers" : [ {
+          "type" : "home",
+          "number" : "+18005555555"
+        }, {
+          "type" : "office",
+          "number" : "+18004444444"
+        }, {
+          "number" : "+18004444444"
+        } ]
       }, {
         "uuid" : "0f0c15ed-565e-4ce9-8670-b54853d0bf03",
         "type" : "organization",
@@ -29,7 +52,22 @@
       }, {
         "uuid" : "96c362ee-a012-4e07-92f3-486ab303b0e7",
         "type" : "organization",
-        "name" : "Acme Corp"
+        "name" : "Acme Corp",
+        "addresses" : [ {
+          "type" : "work",
+          "addr-lines" : [ "0000 Street St", "Ste 400" ],
+          "city" : "City",
+          "state" : "State",
+          "postal-code" : "0000",
+          "country" : "US"
+        }, {
+          "type" : "home",
+          "addr-lines" : [ "1111 Road St" ],
+          "city" : "City",
+          "state" : "State",
+          "postal-code" : "0000",
+          "country" : "US"
+        } ]
       } ]
     },
     "import-profile" : {

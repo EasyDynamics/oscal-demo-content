@@ -3,7 +3,7 @@
     "uuid" : "cff8385f-108e-40a5-8f7a-82f3dc0eaba8",
     "metadata" : {
       "title" : "Enterprise Logging and Auditing System Security Plan",
-      "last-modified" : "2022-08-22T16:09:44.103566Z",
+      "last-modified" : "2022-08-29T19:09:43.216171Z",
       "version" : "1.0",
       "oscal-version" : "1.0.0",
       "roles" : [ {
@@ -166,6 +166,8 @@
       "users" : [ {
         "uuid" : "9824089b-322c-456f-86c4-4111c4200f69",
         "title" : "System Administrator",
+        "short-name" : "SysAdmin",
+        "description" : "responsible for managing, troubleshooting, licensing, and updating hardware and software assets",
         "props" : [ {
           "name" : "type",
           "value" : "internal"
@@ -178,7 +180,12 @@
           "name" : "type",
           "value" : "internal"
         } ],
-        "role-ids" : [ "asset-owner" ]
+        "role-ids" : [ "asset-owner" ],
+        "authorized-privileges" : [ {
+          "title" : "Auditing",
+          "description" : "Description of Auditing",
+          "functions-performed" : [ "audit" ]
+        } ]
       }, {
         "uuid" : "372ce7a3-92b0-437e-a98c-24d29f9bfab8",
         "title" : "Legal Department",
@@ -187,6 +194,25 @@
           "value" : "internal"
         } ],
         "role-ids" : [ "legal-officer" ]
+      }, {
+        "uuid" : "9cb0fab0-78bd-44ba-bcb8-3e9801cc952f",
+        "title" : "Unix System Administrator",
+        "props" : [ {
+          "name" : "sensitivity",
+          "ns" : "https://fedramp.gov/ns/oscal",
+          "value" : "high"
+        }, {
+          "name" : "privilege-level",
+          "value" : "privileged"
+        }, {
+          "name" : "type",
+          "value" : "internal"
+        } ],
+        "role-ids" : [ "admin-unix" ],
+        "authorized-privileges" : [ {
+          "title" : "Full administrative access (root)",
+          "functions-performed" : [ "Add/remove users and hardware", "install and configure software", "OS updates, patches and hotfixes", "perform backups" ]
+        } ]
       } ],
       "components" : [ {
         "uuid" : "e00acdcf-911b-437d-a42f-b0b558cc4f03",

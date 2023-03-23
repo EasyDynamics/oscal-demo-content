@@ -1,0 +1,20 @@
+{
+    "json.schemas": [
+        {
+            "fileMatch": ["catalogs/*.json"],
+            "url": "https://raw.githubusercontent.com/usnistgov/OSCAL/main/json/schema/oscal_catalog_schema.json"
+        },
+        {
+            "fileMatch": ["component-definitions/*.json"],
+            "url": "https://raw.githubusercontent.com/usnistgov/OSCAL/main/json/schema/oscal_component_schema.json"
+        },
+        {
+            "fileMatch": ["profiles/*.json"],
+            "url": "https://raw.githubusercontent.com/usnistgov/OSCAL/main/json/schema/oscal_profile_schema.json"
+        },
+        {
+            "fileMatch": ["system-security-plans/*.json"],
+            "url": "https://raw.githubusercontent.com/usnistgov/OSCAL/main/json/schema/oscal_ssp_schema.json"
+        }
+    ]
+}

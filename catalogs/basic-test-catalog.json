@@ -1,5 +1,4 @@
 {
-  "$schema": "https://raw.githubusercontent.com/usnistgov/OSCAL/main/json/schema/oscal_catalog_schema.json",
   "catalog": {
     "metadata": {
       "oscal-version": "1.0.4",

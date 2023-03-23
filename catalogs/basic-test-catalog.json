@@ -49,6 +49,117 @@
         }
       ]
     },
+    "controls": [
+      {
+        "id": "test-a",
+        "title": "Test Control A",
+        "props": [
+          {
+            "name": "label",
+            "value": "Test (A)"
+          }
+        ],
+        "parts": [
+          {
+            "id": "test-a-stmt-1",
+            "name": "overview",
+            "prose": "This is the first test control. It has **bold text** \n\n and even a new line!",
+            "parts": [
+              {
+                "id": "test-a-stmt-1.1",
+                "name": "overview",
+                "prose": "Even better, it has a part inside a part."
+              }
+            ]
+          }
+        ],
+        "controls": [
+          {
+            "id": "test-a.1",
+            "title": "Test Control A.1",
+            "props": [
+              {
+                "name": "label",
+                "value": "Test (A.1)"
+              }
+            ],
+            "parts": [
+              {
+                "id": "test-a.1-stmt-1",
+                "name": "overview",
+                "prose": "This is a control inside a control."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "test-b",
+        "title": "Test Control B"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Test Group C",
+        "parts": [
+          {
+            "id": "test-c-stmt-1",
+            "name": "overview",
+            "prose": "This group has prose"
+          }
+        ]
+      },
+      {
+        "title": "Test Group D",
+        "id": "test-d"
+      },
+      {
+        "title": "Test Group E",
+        "groups": [
+          {
+            "title": "Test Group E.1",
+            "controls": [
+              {
+                "id": "test-e-1-a",
+                "title": "Test Control E.1.A",
+                "props": [
+                  {
+                    "name": "label",
+                    "value": "Test (E.1.A)"
+                  }
+                ],
+                "parts": [
+                  {
+                    "id": "test-e-1-a-stmt-1",
+                    "name": "overview",
+                    "prose": "This control is in a group in a group. **Wow**!"
+                  }
+                ],
+                "controls": [
+                  {
+                    "id": "test-e-1-a-1",
+                    "title": "Test Control E.1.A.1",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "Test (E.1.A.1)"
+                      }
+                    ],
+                    "parts": [
+                      {
+                        "id": "test-e-1-a-1-stmt-1",
+                        "name": "overview",
+                        "prose": "**_And_** there's a control in here too!"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
     "uuid": "58289821-3a54-4e0c-997c-bccc298f588a"
   }
 }

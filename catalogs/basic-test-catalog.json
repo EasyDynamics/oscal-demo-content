@@ -46,6 +46,12 @@
             "country": "US"
           }
         }
+      ],
+      "props": [
+        {
+          "name": "keywords",
+          "value": "Example,Test Content,Easy Dynamics,Document,Authoring,McLean"
+        }
       ]
     },
     "controls": [

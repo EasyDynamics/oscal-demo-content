@@ -73,12 +73,12 @@
                 ]
               },
               {
-                "id": "test-control-a-2",
-                "title": "Test Control A.2",
+                "id": "test-control-a-1-b",
+                "title": "Test Control A.1.B",
                 "props": [
                   {
                     "name": "label",
-                    "value": "Test (A.2)"
+                    "value": "Test (A.1.B)"
                   },
                   {
                     "name": "status",
@@ -87,49 +87,9 @@
                 ],
                 "parts": [
                   {
-                    "id": "test-control-a-2-overview-1",
+                    "id": "test-control-a-1-b-overview-1",
                     "name": "overview",
                     "prose": "This is a withdrawn control that has controls within it."
-                  }
-                ],
-                "controls": [
-                  {
-                    "id": "test-control-a-2-a",
-                    "title": "Test Control A.2.A",
-                    "props": [
-                      {
-                        "name": "label",
-                        "value": "Test (A.2.A)"
-                      }
-                    ],
-                    "parts": [
-                      {
-                        "id": "test-control-a-2-a-overview-1",
-                        "name": "overview",
-                        "prose": "This control is **not** marked as withdrawn."
-                      }
-                    ]
-                  },
-                  {
-                    "id": "test-control-a-2-b",
-                    "title": "Test Control A.2.B",
-                    "props": [
-                      {
-                        "name": "label",
-                        "value": "Test (A.2.B)"
-                      },
-                      {
-                        "name": "status",
-                        "value": "withdrawn"
-                      }
-                    ],
-                    "parts": [
-                      {
-                        "id": "test-control-a-2-b-overview-1",
-                        "name": "overview",
-                        "prose": "This control **is** marked as withdrawn."
-                      }
-                    ]
                   }
                 ]
               }
@@ -139,46 +99,46 @@
             "title": "Test Group A.2",
             "controls": [
               {
-                "id": "test-control-a-3-a",
-                "title": "Test Control A.3.A",
+                "id": "test-control-a-2-a",
+                "title": "Test Control A.2.A",
                 "props": [
                   {
                     "name": "label",
-                    "value": "Test (A.3.A)"
+                    "value": "Test (A.2.A)"
                   }
                 ],
                 "parts": [
                   {
-                    "id": "test-control-a-3-a-overview-1",
+                    "id": "test-control-a-2-a-overview-1",
                     "name": "overview",
                     "prose": "This control is in a group in a group. **Wow**!"
                   }
                 ],
                 "controls": [
                   {
-                    "id": "test-control-a-3-a-1",
+                    "id": "test-control-a-2-a-1",
                     "title": "Test Control A.2.A.1",
                     "props": [
                       {
                         "name": "label",
-                        "value": "Test (A.3.A.1)"
+                        "value": "Test (A.2.A.1)"
                       }
                     ],
                     "parts": [
                       {
-                        "id": "test-control-a-3-a-1-overview-1",
+                        "id": "test-control-a-2-a-1-overview-1",
                         "name": "overview",
                         "prose": "**_And_** there's a control in here too!"
                       }
                     ]
                   },
                   {
-                    "id": "test-control-a-3-a-2",
+                    "id": "test-control-a-2-a-2",
                     "title": "Test Control A.1.A.2",
                     "props": [
                       {
                         "name": "label",
-                        "value": "Test (A.3.A.2)"
+                        "value": "Test (A.2.A.2)"
                       },
                       {
                         "name": "status",
@@ -187,7 +147,7 @@
                     ],
                     "parts": [
                       {
-                        "id": "test-control-a-3-a-2-overview-1",
+                        "id": "test-control-a-2-a-2-overview-1",
                         "name": "overview",
                         "prose": "_This_ control has been withdrawn."
                       }
@@ -196,12 +156,12 @@
                 ]
               },
               {
-                "id": "test-control-a-4",
-                "title": "Test Control A.4",
+                "id": "test-control-a-2-b",
+                "title": "Test Control A.2.B",
                 "props": [
                   {
                     "name": "label",
-                    "value": "Test (A.4)"
+                    "value": "Test (A.2.B)"
                   },
                   {
                     "name": "status",
@@ -213,46 +173,6 @@
                     "id": "test-control-a-4-overview-1",
                     "name": "overview",
                     "prose": "This is a withdrawn control that has controls within it."
-                  }
-                ],
-                "controls": [
-                  {
-                    "id": "test-control-a-4-a",
-                    "title": "Test Control A.4.A",
-                    "props": [
-                      {
-                        "name": "label",
-                        "value": "Test (A.4.A)"
-                      }
-                    ],
-                    "parts": [
-                      {
-                        "id": "test-control-a-4-a-overview-1",
-                        "name": "overview",
-                        "prose": "This control is **not** marked as withdrawn."
-                      }
-                    ]
-                  },
-                  {
-                    "id": "test-control-a-4-b",
-                    "title": "Test Control A.4.B",
-                    "props": [
-                      {
-                        "name": "label",
-                        "value": "Test (A.4.B)"
-                      },
-                      {
-                        "name": "status",
-                        "value": "withdrawn"
-                      }
-                    ],
-                    "parts": [
-                      {
-                        "id": "test-control-a-4-b-overview-1",
-                        "name": "overview",
-                        "prose": "This control **is** marked as withdrawn."
-                      }
-                    ]
                   }
                 ]
               }
@@ -330,12 +250,12 @@
                         ]
                       },
                       {
-                        "id": "test-control-b-2",
-                        "title": "Test Control E.2",
+                        "id": "test-control-b-2-a",
+                        "title": "Test Control B.2.A",
                         "props": [
                           {
                             "name": "label",
-                            "value": "Test (B.2)"
+                            "value": "Test (B.2.A)"
                           },
                           {
                             "name": "status",
@@ -344,36 +264,36 @@
                         ],
                         "parts": [
                           {
-                            "id": "test-control-b-2-overview-1",
+                            "id": "test-control-b-2-a-overview-1",
                             "name": "overview",
                             "prose": "This is a withdrawn control that has controls within it."
                           }
                         ],
                         "controls": [
                           {
-                            "id": "test-control-b-2-a",
-                            "title": "Test Control B.2.A",
+                            "id": "test-control-b-2-a-a",
+                            "title": "Test Control B.2.A.A",
                             "props": [
                               {
                                 "name": "label",
-                                "value": "Test (B.2.A)"
+                                "value": "Test (B.2.A.A)"
                               }
                             ],
                             "parts": [
                               {
-                                "id": "test-control-b-2-a-overview-1",
+                                "id": "test-control-b-2-a-a-overview-1",
                                 "name": "overview",
                                 "prose": "This control is **not** marked as withdrawn."
                               }
                             ]
                           },
                           {
-                            "id": "test-control-b-2-b",
-                            "title": "Test Control B.2.B",
+                            "id": "test-control-b-2-a-b",
+                            "title": "Test Control B.2.A.B",
                             "props": [
                               {
                                 "name": "label",
-                                "value": "Test (B.2.B)"
+                                "value": "Test (B.2.A.B)"
                               },
                               {
                                 "name": "status",
@@ -382,7 +302,7 @@
                             ],
                             "parts": [
                               {
-                                "id": "test-control-b-2-b-overview-1",
+                                "id": "test-control-b-2-a-b-overview-1",
                                 "name": "overview",
                                 "prose": "This control **is** marked as withdrawn."
                               }

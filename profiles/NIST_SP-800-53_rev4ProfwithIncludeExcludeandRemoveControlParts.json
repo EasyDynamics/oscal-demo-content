@@ -1,0 +1,2392 @@
+{
+    "profile": {
+      "uuid": "8b3beca1-fcdc-43e0-aebb-ffc0a080c486",
+      "metadata": {
+        "title": "NIST Special Publication 800-53 Revision 4 MODERATE IMPACT BASELINE",
+        "last-modified": "2021-06-08T13:57:30.476461-04:00",
+        "version": "2015-01-22",
+        "oscal-version": "1.0.0",
+        "roles": [
+          {
+            "id": "creator",
+            "title": "Document Creator"
+          },
+          {
+            "id": "contact",
+            "title": "Contact"
+          }
+        ],
+        "parties": [
+          {
+            "uuid": "29dd471e-7206-4388-857b-47673c04c4c9",
+            "type": "organization",
+            "name": "Joint Task Force, Transformation Initiative",
+            "email-addresses": [
+              "sec-cert@nist.gov"
+            ],
+            "addresses": [
+              {
+                "addr-lines": [
+                  "National Institute of Standards and Technology",
+                  "Attn: Computer Security Division",
+                  "Information Technology Laboratory",
+                  "100 Bureau Drive (Mail Stop 8930)"
+                ],
+                "city": "Gaithersburg",
+                "state": "MD",
+                "postal-code": "20899-8930"
+              }
+            ]
+          }
+        ],
+        "responsible-parties": [
+          {
+            "role-id": "creator",
+            "party-uuids": [
+              "316876e2-5c7b-4a60-a488-2ed977238f04"
+            ]
+          },
+          {
+            "role-id": "contact",
+            "party-uuids": [
+              "316876e2-5c7b-4a60-a488-2ed977238f04"
+            ]
+          }
+        ]
+      },
+      "imports": [
+        {
+          "href": "#dc380596-027f-423b-83f2-82757554ee27",
+          "include-all": {},
+          "exclude-controls": [
+            {
+                "with-ids": [
+                  "ac-1",
+                  "ac-2.1",
+                  "ac-2.3",
+                  "ac-2.4",
+                  "ac-2.5",
+                  "ac-2.7",
+                  "ac-2.9",
+                  "ac-2.10",
+                  "ac-2.11",
+                  "ac-5",
+                  "ac-6",
+                  "ac-6.1",
+                  "ac-6.2",
+                  "au-1",
+                  "au-2",
+                  "au-2.3",
+                  "au-5.1",
+                  "au-5.2",
+                  "au-6",
+                  "au-6.1",
+                  "au-6.3",
+                  "au-6.4",
+                  "au-6.5",
+                  "ca-2.1",
+                  "ca-2.2",
+                  "cm-8.1",
+                  "cp-3.1",
+                  "cp-4.1",
+                  "cp-9.1",
+                  "cp-10.2",
+                  "ia-2.1",
+                  "ia-2.2",
+                  "ia-2.3",
+                  "ir-2.1",
+                  "ir-2.2",
+                  "ir-5.1",
+                  "ir-9.1"
+                ]
+              }
+          ] 
+        }
+      ],
+      "merge": {
+        "as-is": true
+      },
+      "modify": {
+        "alters": [
+          {
+            "control-id": "ac-1",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ac-2",
+            "removes": [
+                {
+                  "by-id": "ac-2_smt.b"
+                },
+                {
+                  "by-id": "ac-2_smt.c"
+                },
+                {
+                  "by-id": "ac-2_smt.d"
+                },
+                {
+                  "by-id": "ac-2_smt.e"
+                },
+                {
+                  "by-id": "ac-2_smt.i"
+                },
+                {
+                  "by-id": "ac-2_smt.j"
+                },
+                {
+                  "by-id": "ac-2_smt.k"
+                },
+                {
+                  "by-name": "objective"
+                },
+                {
+                  "by-name": "assessment"
+                }
+              ],
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ac-3",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ac-4",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ac-5",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ac-6",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ac-7",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ac-8",
+            "removes": [
+                {
+                  "by-id": "ac-8_smt.a"
+                },
+                {
+                  "by-id": "ac-8_smt.c"
+                }
+              ],
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ac-11",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P3"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ac-12",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ac-14",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P3"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ac-17",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ac-18",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ac-19",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ac-20",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ac-21",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ac-22",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P3"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "at-1",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "at-2",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "at-3",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "at-4",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P3"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "au-1",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "au-2",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "au-3",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "au-4",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "au-5",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "au-6",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "au-7",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "au-8",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "au-9",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "au-11",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P3"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "au-12",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ca-1",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ca-2",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ca-3",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ca-5",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P3"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ca-6",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ca-7",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ca-9",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "cm-1",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "cm-2",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "cm-3",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "cm-4",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "cm-5",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "cm-6",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "cm-7",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "cm-8",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "cm-9",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "cm-10",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "cm-11",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "cp-1",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "cp-2",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "cp-3",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "cp-4",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "cp-6",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "cp-7",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "cp-8",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "cp-9",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "cp-10",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ia-1",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ia-2",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ia-3",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ia-4",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ia-5",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ia-6",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ia-7",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ia-8",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ir-1",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ir-2",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ir-3",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ir-4",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ir-5",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ir-6",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ir-7",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ir-8",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ma-1",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ma-2",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ma-3",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P3"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ma-4",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ma-5",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ma-6",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "mp-1",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "mp-2",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "mp-3",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "mp-4",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "mp-5",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "mp-6",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "mp-7",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "pe-1",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "pe-2",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "pe-3",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "pe-4",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "pe-5",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "pe-6",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "pe-8",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P3"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "pe-9",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "pe-10",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "pe-11",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "pe-12",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "pe-13",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "pe-14",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "pe-15",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "pe-16",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "pe-17",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "pl-1",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "pl-2",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "pl-4",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "pl-8",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ps-1",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ps-2",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ps-3",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ps-4",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ps-5",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ps-6",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P3"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ps-7",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ps-8",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P3"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ra-1",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ra-2",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ra-3",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "ra-5",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "sa-1",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "sa-2",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "sa-3",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "sa-4",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "sa-5",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "sa-8",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "sa-9",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "sa-10",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "sa-11",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "sc-1",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "sc-2",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "sc-4",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "sc-5",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "sc-7",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "sc-8",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "sc-10",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "sc-12",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "sc-13",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "sc-15",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "sc-17",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "sc-18",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "sc-19",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "sc-20",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "sc-21",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "sc-22",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "sc-23",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "sc-28",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "sc-39",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "si-1",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "si-2",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "si-3",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "si-4",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "si-5",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "si-7",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "si-8",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "si-10",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "si-11",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "si-12",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "control-id": "si-16",
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "back-matter": {
+        "resources": [
+          {
+            "uuid": "dc380596-027f-423b-83f2-82757554ee27",
+            "description": "NIST Special Publication 800-53 Revision 4: Security and Privacy Controls for Federal Information Systems and Organizations",
+            "rlinks": [
+              {
+                "href": "../catalogs/NIST_SP-800-53_rev4_catalog.json",
+                "media-type": "application/oscal.catalog+json"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+  

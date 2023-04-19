@@ -162,7 +162,18 @@
                     "value": "P1"
                   }
                 ]
-              }
+              },
+              {
+                "position": "starting",
+                "by-id": "ac-2_smt.b",
+                "title": "Authentification Improve"
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P2"
+                  }
+                ]
+              }  
             ]
           },
           {

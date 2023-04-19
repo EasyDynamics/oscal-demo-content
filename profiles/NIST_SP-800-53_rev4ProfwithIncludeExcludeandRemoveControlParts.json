@@ -177,11 +177,33 @@
               {
                 "position": "before",
                 "by-id": "ac-2_smt.a",
-                "title": "Authentification Improve",
+                "title": "Improve Reporting",
                 "props": [
                   {
                     "name": "latency",
                     "value": "hourly"
+                  }
+                ]
+              },
+              {
+                "position": "after",
+                "by-id": "ac-2_smt.g",
+                "title": "Reporting",
+                "props": [
+                  {
+                    "name": "latency",
+                    "value": "daily"
+                  }
+                ]
+              },
+              {
+                "position": "ending",
+                "by-id": "ac-2_smt.h",
+                "title": "Reporting",
+                "props": [
+                  {
+                    "name": "latency",
+                    "value": "monthly"
                   }
                 ]
               }  

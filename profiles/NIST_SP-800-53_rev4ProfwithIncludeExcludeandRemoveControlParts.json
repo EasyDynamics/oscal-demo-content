@@ -173,6 +173,17 @@
                     "value": "P2"
                   }
                 ]
+              },
+              {
+                "position": "before",
+                "by-id": "ac-2_smt.a",
+                "title": "Authentification Improve",
+                "props": [
+                  {
+                    "name": "latency",
+                    "value": "hourly"
+                  }
+                ]
               }  
             ]
           },

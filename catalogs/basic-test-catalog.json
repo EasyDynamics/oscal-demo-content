@@ -52,6 +52,22 @@
           "name": "keywords",
           "value": "Example,Test Content,Easy Dynamics,Document,Authoring,McLean"
         }
+      ],
+      "revisions": [
+        {
+          "version": "Version 1"
+        },
+        {
+          "version": "Version 2",
+          "title": "This is a revision title",
+          "published": "2023-04-19T13:50:25+00:00",
+          "last-modified": "2023-04-19T13:50:25+00:00",
+          "oscal-version": "1.0.4"
+        },
+        {
+          "version": "Version 3",
+          "title": "This is another revision title"
+        }
       ]
     },
     "controls": [

@@ -346,20 +346,93 @@
           ]
         },
         {
-          "control-id": "ac-2",
-          "adds": [
-            {
-              "position": "starting",
-              "props": [
+            "control-id": "ac-2",
+            "removes": [
                 {
-                  "name": "priority",
-                  "value": "P1"
+                  "by-id": "ac-2_smt.b"
+                },
+                {
+                  "by-id": "ac-2_smt.c"
+                },
+                {
+                  "by-id": "ac-2_smt.d"
+                },
+                {
+                  "by-id": "ac-2_smt.e"
+                },
+                {
+                  "by-id": "ac-2_smt.i"
+                },
+                {
+                  "by-id": "ac-2_smt.j"
+                },
+                {
+                  "by-id": "ac-2_smt.k"
+                },
+                {
+                  "by-name": "objective"
+                },
+                {
+                  "by-name": "assessment"
                 }
-              ]
-            }
-          ]
-        },
-        {
+              ],
+            "adds": [
+              {
+                "position": "starting",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P1"
+                  }
+                ]
+              },
+              {
+                "position": "starting",
+                "by-id": "ac-2_smt.f",
+                "title": "Authentification Improve",
+                "props": [
+                  {
+                    "name": "priority",
+                    "value": "P2"
+                  }
+                ]
+              },
+              {
+                "position": "before",
+                "by-id": "ac-2_smt.a",
+                "title": "Improve Reporting",
+                "props": [
+                  {
+                    "name": "latency",
+                    "value": "hourly"
+                  }
+                ]
+              },
+              {
+                "position": "after",
+                "by-id": "ac-2_smt.g",
+                "title": "Reporting",
+                "props": [
+                  {
+                    "name": "latency",
+                    "value": "daily"
+                  }
+                ]
+              },
+              {
+                "position": "ending",
+                "by-id": "ac-2_smt.h",
+                "title": "Reporting",
+                "props": [
+                  {
+                    "name": "latency",
+                    "value": "monthly"
+                  }
+                ]
+              }  
+            ]
+          },
+          {
           "control-id": "ac-3",
           "adds": [
             {

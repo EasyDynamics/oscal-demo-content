@@ -123,6 +123,13 @@
         "groups": [
           {
             "title": "Test Group E.1",
+            "parts": [
+              {
+                "id": "test-e-1-overview-1",
+                "name": "overview",
+                "prose": "This group has prose"
+              }
+            ],
             "controls": [
               {
                 "id": "test-e-1-a",

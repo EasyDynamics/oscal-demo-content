@@ -9,15 +9,18 @@
       "props": [
         {
           "name": "keywords",
-          "value": "Test keywords 1"
+          "value": "Test keywords 1",
+          "remarks": "Example remarks for 'Test keywords 1'"
         },
         {
           "name": "keywords",
-          "value": "Test keywords 2"
+          "value": "Test keywords 2",
+          "remarks": "Example remarks for 'Test keywords 2'"
         },
         {
           "name": "keywords",
-          "value": "Test keywords 3"
+          "value": "Test keywords 3",
+          "remarks": "Example remarks for 'Test keywords 3'"
         },
         {
           "name": "keywords",

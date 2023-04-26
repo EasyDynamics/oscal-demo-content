@@ -112,6 +112,25 @@
             "name": "overview",
             "prose": "This group has prose"
           }
+        ],
+        "controls": [
+          {
+            "id": "test-c.1",
+            "title": "Test Control C.1",
+            "props": [
+              {
+                "name": "label",
+                "value": "Test (C.1)"
+              }
+            ],
+            "parts": [
+              {
+                "id": "test-c.1-overview-1",
+                "name": "overview",
+                "prose": "This is a control inside a control."
+              }
+            ]
+          }
         ]
       },
       {

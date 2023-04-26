@@ -1,0 +1,143 @@
+{
+  "catalog": {
+    "uuid": "d324d7b6-a3a8-3a32-9ed2-466f8d9a89e2",
+    "metadata": {
+      "title": "Generic Properties Test Catalog",
+      "last-modified": "2023-04-23T09:12:18-07:00",
+      "version": "0.0.1",
+      "oscal-version": "1.0.4",
+      "props": [
+        {
+          "name": "keywords",
+          "value": "Test keywords 1"
+        },
+        {
+          "name": "keywords",
+          "value": "Test keywords 2"
+        },
+        {
+          "name": "keywords",
+          "value": "Test keywords 3"
+        },
+        {
+          "name": "keywords",
+          "value": "Test keywords 4"
+        },
+        {
+          "name": "keywords",
+          "value": "Test keywords 5"
+        },
+        {
+          "name": "keywords",
+          "value": "Test keywords 6"
+        },
+        {
+          "name": "keywords",
+          "value": "Test keywords 7"
+        },
+        {
+          "name": "label",
+          "ns": "https://csrc.nist.gov/ns/oscal",
+          "value": "Test label 1"
+        },
+        {
+          "name": "keywords",
+          "ns": "https://another.source.com/oscal",
+          "value": "Test keywords 8"
+        },
+        {
+          "name": "label",
+          "ns": "https://another.source.com/oscal",
+          "value": "Test label 2"
+        },
+        {
+          "name": "label",
+          "ns": "https://another.source.com/oscal",
+          "class": "Test class 1",
+          "value": "Test label 3"
+        },
+        {
+          "name": "label",
+          "ns": "https://another.another.source.com/ns",
+          "class": "Test class 2",
+          "value": "Test label 4"
+        },
+        {
+          "name": "keywords",
+          "ns": "https://another.another.source.com/ns",
+          "class": "Test class 3",
+          "value": "Test keywords 9"
+        }
+      ],
+      "remarks": "This is a sample catalog purely for testing generic properties."
+    },
+    "groups": [
+      {
+        "title": "Test Group A",
+        "controls": [
+          {
+            "id": "test-control-a-1",
+            "title": "Test Control A.1",
+            "props": [
+              {
+                "name": "label",
+                "value": "Test (A.1)"
+              }
+            ],
+            "parts": [
+              {
+                "id": "test-control-a-1-overview-1",
+                "name": "overview",
+                "prose": "This is a test control within Test Group A."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Test Group B",
+        "controls": [
+          {
+            "id": "test-control-b-1",
+            "title": "Test Control B.1",
+            "props": [
+              {
+                "name": "label",
+                "value": "Test (B.1)"
+              }
+            ],
+            "parts": [
+              {
+                "id": "test-control-b-1-overview-1",
+                "name": "overview",
+                "prose": "This is a test control within Test Group B."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "52a892ec-e908-6321-b40c-0302ea5cd8c2",
+          "title": "Test Resource 1",
+          "citation": {
+            "text": "This is a test back-matter resource."
+          },
+          "props": [
+            {
+              "name": "label",
+              "ns": "https://another.source.com/oscal",
+              "value": "Test label 5"
+            },
+            {
+              "name": "keywords",
+              "value": "Test keywords 10"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

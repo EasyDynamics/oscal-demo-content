@@ -10,21 +10,26 @@
         {
           "name": "keywords",
           "value": "Test keywords 1",
+          "class": "Test class 1",
           "remarks": "Example remarks for 'Test keywords 1'"
         },
         {
           "name": "keywords",
           "value": "Test keywords 2",
+          "class": "Test class 1",
           "remarks": "Example remarks for 'Test keywords 2'"
+        },
+        {
+          "name": "label",
+          "ns": "https://csrc.nist.gov/ns/oscal",
+          "value": "Test label 1",
+          "class": "Test class 2",
+          "remarks": "Example remarks for 'Test label 1'"
         },
         {
           "name": "keywords",
           "value": "Test keywords 3",
           "remarks": "Example remarks for 'Test keywords 3'"
-        },
-        {
-          "name": "keywords",
-          "value": "Test keywords 4"
         },
         {
           "name": "keywords",
@@ -41,7 +46,7 @@
         {
           "name": "label",
           "ns": "https://csrc.nist.gov/ns/oscal",
-          "value": "Test label 1"
+          "value": "Test label 2"
         },
         {
           "name": "keywords",
@@ -51,24 +56,24 @@
         {
           "name": "label",
           "ns": "https://another.source.com/oscal",
-          "value": "Test label 2"
-        },
-        {
-          "name": "label",
-          "ns": "https://another.source.com/oscal",
-          "class": "Test class 1",
           "value": "Test label 3"
         },
         {
           "name": "label",
-          "ns": "https://another.another.source.com/ns",
+          "ns": "https://another.source.com/oscal",
           "class": "Test class 2",
           "value": "Test label 4"
         },
         {
-          "name": "keywords",
+          "name": "label",
           "ns": "https://another.another.source.com/ns",
           "class": "Test class 3",
+          "value": "Test label 5"
+        },
+        {
+          "name": "keywords",
+          "ns": "https://another.another.source.com/ns",
+          "class": "Test class 4",
           "value": "Test keywords 9"
         }
       ],

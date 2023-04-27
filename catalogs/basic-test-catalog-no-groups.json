@@ -1,0 +1,108 @@
+{
+  "catalog": {
+    "metadata": {
+      "oscal-version": "1.0.4",
+      "version": "0.0.1",
+      "last-modified": "2023-03-22T12:21:00-04:00",
+      "title": "Sample Catalog",
+      "remarks": "This is a sample catalog purely for demonstration purposes.",
+      "parties": [
+        {
+          "uuid": "f895c3d1-2cc4-44bb-99ea-68b87ae040ec",
+          "type": "organization",
+          "name": "Easy Dynamics Corporation",
+          "email-addresses": ["oscal@easydynamics.com"],
+          "location-uuids": [
+            "be3950b7-2bdb-4101-8f72-1a2601ffc03c"
+          ]
+        }
+      ],
+      "roles": [
+        {
+          "id": "author",
+          "title": "Document author",
+          "short-name": "Author",
+          "description": "The author of the document"
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "author",
+          "party-uuids": [
+            "f895c3d1-2cc4-44bb-99ea-68b87ae040ec"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "uuid": "be3950b7-2bdb-4101-8f72-1a2601ffc03c",
+          "title": "Easy Dynamics",
+          "address": {
+            "type": "work",
+            "addr-lines": ["2000 Corporate Ridge", "Ste 240"],
+            "city": "McLean",
+            "state": "VA",
+            "postal-code": "22101",
+            "country": "US"
+          }
+        }
+      ],
+      "props": [
+        {
+          "name": "keywords",
+          "value": "Example,Test Content,Easy Dynamics,Document,Authoring,McLean"
+        }
+      ]
+    },
+    "controls": [
+      {
+        "id": "test-a",
+        "title": "Test Control A",
+        "props": [
+          {
+            "name": "label",
+            "value": "Test (A)"
+          }
+        ],
+        "parts": [
+          {
+            "id": "test-a-overview-1",
+            "name": "overview",
+            "prose": "This is the first test control. It has **bold text** \n\n and even a new line!",
+            "parts": [
+              {
+                "id": "test-a-overview-1.1",
+                "name": "overview",
+                "prose": "Even better, it has a part inside a part."
+              }
+            ]
+          }
+        ],
+        "controls": [
+          {
+            "id": "test-a.1",
+            "title": "Test Control A.1",
+            "props": [
+              {
+                "name": "label",
+                "value": "Test (A.1)"
+              }
+            ],
+            "parts": [
+              {
+                "id": "test-a.1-overview-1",
+                "name": "overview",
+                "prose": "This is a control inside a control."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "test-b",
+        "title": "Test Control B"
+      }
+    ],
+    "uuid": "58289821-3a54-4e0c-997c-bccc298f588a"
+  }
+}

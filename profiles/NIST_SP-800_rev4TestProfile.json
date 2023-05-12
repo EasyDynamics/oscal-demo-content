@@ -92,9 +92,7 @@
                   "ir-9.1"
                 ]
               }
-          ] 
-        }
-      ],
+          ], 
           "exclude-controls": [
             {
                 "with-ids": [

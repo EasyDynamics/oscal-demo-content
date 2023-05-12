@@ -126,12 +126,6 @@
             "control-id": "ac-2",
             "removes": [
                 {
-                  "by-id": "ac-2_smt.b"
-                },
-                {
-                  "by-id": "ac-2_smt.c"
-                },
-                {
                   "by-id": "ac-2_smt.d"
                 },
                 {
@@ -182,6 +176,28 @@
                   {
                     "name": "latency",
                     "value": "hourly"
+                  }
+                ]
+              },
+              {
+                "position": "before",
+                "by-id": "ac-2_smt.b",
+                "title": "Improve Reporting",
+                "props": [
+                  {
+                    "name": "when",
+                    "value": "hourly"
+                  }
+                ]
+              },
+              {
+                "position": "before",
+                "by-id": "ac-2_smt.c",
+                "title": "Improve Reporting",
+                "props": [
+                  {
+                    "name": "where",
+                    "value": "office"
                   }
                 ]
               },

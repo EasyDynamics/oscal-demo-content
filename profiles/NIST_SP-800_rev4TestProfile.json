@@ -168,7 +168,7 @@
                 ]
               },
               {
-                "position": "before",
+                "position": "after",
                 "by-id": "ac-2_smt.b",
                 "title": "Improve Reporting",
                 "props": [
@@ -217,7 +217,7 @@
             "control-id": "ac-3",
             "adds": [
               {
-                "position": "starting",
+                "position": "before",
                 "props": [
                   {
                     "name": "priority",
@@ -231,7 +231,7 @@
             "control-id": "ac-4",
             "adds": [
               {
-                "position": "starting",
+                "position": "ending",
                 "props": [
                   {
                     "name": "priority",
@@ -245,7 +245,7 @@
             "control-id": "ac-5",
             "adds": [
               {
-                "position": "starting",
+                "position": "after",
                 "props": [
                   {
                     "name": "priority",
@@ -273,7 +273,7 @@
             "control-id": "ac-7",
             "adds": [
               {
-                "position": "starting",
+                "position": "ending",
                 "props": [
                   {
                     "name": "priority",

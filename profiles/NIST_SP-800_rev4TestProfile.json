@@ -210,6 +210,17 @@
                     "value": "monthly"
                   }
                 ]
+              },
+              {
+                "position": "starting",
+                "by-id": "ac-2_smt.i",
+                "title": "Reporting",
+                "props": [
+                  {
+                    "name": "latency",
+                    "value": "monthly"
+                  }
+                ]
               }  
             ]
           },

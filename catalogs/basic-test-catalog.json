@@ -1,5 +1,12 @@
 {
   "catalog": {
+    "params": [
+      {
+        "id": "test-a-param-1",
+        "label": "A param",
+        "usage": "Some **usage**\ntext"
+      }
+    ],
     "metadata": {
       "oscal-version": "1.0.4",
       "version": "0.0.1",
@@ -58,6 +65,118 @@
       {
         "id": "test-a",
         "title": "Test Control A",
+        "params": [
+          {
+            "id": "test-a-param-1",
+            "label": "A param",
+            "usage": "Some **usage**\ntext",
+            "links": [
+              {"href": "www.google.com", "text": "Google"},
+              {"href": "www.bing.com"}
+            ],
+            "constraints": [
+              {
+                "description": "Constraint **1**",
+                "tests": [
+                  {
+                    "expression": "Test 1",
+                    "remarks": "The first listed test"
+                  },
+                  {
+                    "expression": "Test 2"
+                  }
+                ]
+              },
+              {
+                "description": "Constraint **2**",
+                "tests": [
+                  {
+                    "expression": "Test 1",
+                    "remarks": "The first listed test"
+                  },
+                  {
+                    "expression": "Test 2"
+                  }
+                ]
+              }
+
+            ],
+            "guidelines": [
+              {
+                "prose": "Guideline 1 prose"
+              },
+              {
+                "prose": "Guideline 2 prose"
+              }
+            ],
+            "values": [
+              "value 1",
+              "value 2",
+              "value 3"
+            ],
+            "select": {
+              "how-many":"one-or-more",
+              "choice": [
+                "choice 1",
+                "choice 2",
+                "choice 3"
+              ]
+            },
+            "remarks": "Param remarks"
+          },
+          {
+            "id": "test-a-param-2",
+            "usage": "Some **usage**\ntext",
+            "constraints": [
+              {
+                "description": "Constraint **1**",
+                "tests": [
+                  {
+                    "expression": "Test 1",
+                    "remarks": "The first listed test"
+                  },
+                  {
+                    "expression": "Test 2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "test-a-param-3",
+            "select": {
+              "how-many":"one-or-more",
+              "choice": [
+                "choice 1",
+                "choice 2",
+                "choice 3"
+              ]
+            },
+            "remarks": "Param remarks"
+          },
+          {
+            "id": "test-a-param-4",
+            "guidelines": [
+              {
+                "prose": "Guideline 1 prose"
+              },
+              {
+                "prose": "Guideline 2 prose"
+              }
+            ]
+          },
+          {
+            "id": "test-a-param-5",
+            "select": {
+              "how-many":"one",
+              "choice": [
+                "choice 1",
+                "choice 2",
+                "choice 3"
+              ]
+            }
+          }
+        ],
         "props": [
           {
             "name": "label",
@@ -102,7 +221,7 @@
         "id": "test-b",
         "title": "Test Control B"
       }
-    ],
+     ],
     "groups": [
       {
         "title": "Test Group C",

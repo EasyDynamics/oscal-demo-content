@@ -502,7 +502,7 @@
             "control-id": "au-1",
             "adds": [
               {
-                "position": "starting",
+                "position": "before",
                 "props": [
                   {
                     "name": "priority",
@@ -516,7 +516,7 @@
             "control-id": "au-2",
             "adds": [
               {
-                "position": "starting",
+                "position": "ending",
                 "props": [
                   {
                     "name": "priority",
@@ -530,7 +530,7 @@
             "control-id": "au-3",
             "adds": [
               {
-                "position": "starting",
+                "position": "after",
                 "props": [
                   {
                     "name": "priority",
@@ -558,7 +558,7 @@
             "control-id": "au-5",
             "adds": [
               {
-                "position": "starting",
+                "position": "ending",
                 "props": [
                   {
                     "name": "priority",

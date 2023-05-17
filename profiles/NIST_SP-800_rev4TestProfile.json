@@ -306,7 +306,7 @@
               ],
             "adds": [
               {
-                "position": "starting",
+                "position": "ending",
                 "props": [
                   {
                     "name": "priority",
@@ -320,7 +320,7 @@
             "control-id": "ac-11",
             "adds": [
               {
-                "position": "starting",
+                "position": "before",
                 "props": [
                   {
                     "name": "priority",
@@ -334,7 +334,7 @@
             "control-id": "ac-12",
             "adds": [
               {
-                "position": "starting",
+                "position": "after",
                 "props": [
                   {
                     "name": "priority",

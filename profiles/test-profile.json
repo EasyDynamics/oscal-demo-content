@@ -1,0 +1,72 @@
+{
+  "profile": {
+    "uuid": "d87af461-5499-40ad-8fa1-28d1adf52600",
+    "metadata": {
+      "title": "Example Profile",
+      "last-modified": "2021-06-08T13:57:30.476461-04:00",
+      "version": "2015-01-22",
+      "oscal-version": "1.0.0"
+    },
+    "imports": [
+      {
+        "href": "../catalogs/NIST_SP-800-53_rev5_catalog.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "ac-2"
+            ]
+          }
+        ]
+      }
+    ],
+    "modify": {
+      "alters": [
+        {
+          "control-id": "ac-2",
+          "adds": [
+            {
+              "position": "before",
+              "by-id": "ac-2_smt.c",
+              "props": [
+                {
+                  "name": "priority",
+                  "value": "P2"
+                }
+              ]
+            },
+            {
+              "position": "after",
+              "by-id": "ac-2_smt.e",
+              "props": [
+                {
+                  "name": "priority",
+                  "value": "P2"
+                }
+              ]
+            },
+            {
+              "position": "starting",
+              "by-id": "ac-2_smt.f",
+              "props": [
+                {
+                  "name": "priority",
+                  "value": "P2"
+                }
+              ]
+            },
+            {
+              "position": "ending",
+              "by-id": "ac-2_smt.j",
+              "props": [
+                {
+                  "name": "priority",
+                  "value": "P2"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
